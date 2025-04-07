@@ -6,4 +6,4 @@ basically a clone of Five Nights at Freddy's but with our own spin
 credits:\
 @rmfandyplayz - Lead, programmer\
 @mc_grand - Modeler\
-@Jeremylinyh - programmer
+@Jeremylinyh - Programmer
