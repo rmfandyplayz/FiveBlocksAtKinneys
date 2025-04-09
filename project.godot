@@ -16,7 +16,7 @@ config/version="0.1.0"
 run/main_scene="uid://cxcbnoa0by8kh"
 config/features=PackedStringArray("4.4", "Forward Plus")
 boot_splash/bg_color=Color(0, 0, 0, 1)
-boot_splash/image="uid://da5jjhmeio3lj"
+boot_splash/image="uid://br62c0winrs4d"
 config/icon="uid://cv68tqw0r86o1"
 
 [display]
@@ -31,5 +31,5 @@ folder_colors={
 "res://Media/": "red",
 "res://Scenes/": "green",
 "res://Scripts/": "purple",
-"res://Uncategorized/": "pink"
+"res://Uncategorized-Misc/": "pink"
 }

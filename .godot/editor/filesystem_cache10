@@ -1,14 +1,18 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1744045221
-icon.svg::CompressedTexture2D/CompressedTexture2D::6238506953677126223::1744043764::1744044034::1::::<><><>0<>0<>f7fd395a1bc83643180ca9c98c554c17<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+::res://::1744215939
 README.md::TextFile/TextFile::-1::1744043964::0::1::::<><><>0<>0<><>::
 ::res://Media/::1744045226
 ::res://Media/3DModels/::1744044445
-::res://Media/Others/::1744045249
-boot splash.png::CompressedTexture2D::7221756295175258079::1744045249::1744045253::1::::<><><>0<>0<>cbd59d75b0a07f8d9591c91af62017bb<>res://.godot/imported/boot splash.png-3a40fa43507b394292b1effca670900d.ctex::
+::res://Media/Others/::1744213324
+boot splash.png::CompressedTexture2D/CompressedTexture2D::7221756295175258079::1744045249::1744045253::1::::<><><>0<>0<>cbd59d75b0a07f8d9591c91af62017bb<>res://.godot/imported/boot splash.png-3a40fa43507b394292b1effca670900d.ctex::
 feddy mewing.png::CompressedTexture2D/CompressedTexture2D::6312841260525457706::1744045180::1744045180::1::::<><><>0<>0<>5bb1cd1e3f619ae3ca194b35d31838e7<>res://.godot/imported/feddy mewing.png-f8fd03d6ab70bebd2a1d44b371021032.ctex::
+icon.svg::CompressedTexture2D/CompressedTexture2D::6238506953677126223::1744043764::1744213324::1::::<><><>0<>0<>6090ad4c90e1152ebcfe0b7d7d9cb5fd<>res://.godot/imported/icon.svg-2efe6628bbabdeb4bd1d126a990074bf.ctex::
+yourmotherColorized.png::CompressedTexture2D/CompressedTexture2D::3645271013759005437::1744213238::1744213238::1::::<><><>0<>0<>749646abf0fbffbe1804db3580564434<>res://.godot/imported/yourmotherColorized.png-837b1cf3a3665e6d9aec2dfe8d2bbfe2.ctex::
 ::res://Media/Sprites/::1744045197
-::res://Media/UserInterface/::1744044455
-::res://Scenes/::1744044421
+::res://Media/UserInterface/::1744215939
+CameraChangeHover.png::CompressedTexture2D::7545954696952236893::1744215180::1744215939::1::::<><><>0<>0<>645e4257dffc52c7d5b219b7fbb49756<>res://.godot/imported/CameraChangeHover.png-0a67cff1bf00c9c3600d055521a24ea2.ctex::
+::res://Scenes/::1744215642
+Game.tscn::PackedScene::6391398195347702351::1744215201::0::1::::<><><>0<>0<><>::
+GameUI.tscn::PackedScene::7703837586495796631::1744215642::0::1::::<><><>0<>0<><>::
 ::res://Scripts/::1744044425
 ::res://Uncategorized/::1744044434

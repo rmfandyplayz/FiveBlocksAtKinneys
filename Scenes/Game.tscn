@@ -1,3 +1,5 @@
 [gd_scene format=3 uid="uid://cxcbnoa0by8kh"]
 
 [node name="Game" type="Node3D"]
+editor_description = "the root node for the scene where the main gameplay is supposed to happen"
+metadata/_edit_lock_ = true
