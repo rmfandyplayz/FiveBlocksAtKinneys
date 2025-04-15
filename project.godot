@@ -33,3 +33,7 @@ folder_colors={
 "res://Scripts/": "purple",
 "res://Uncategorized-Misc/": "pink"
 }
+
+[physics]
+
+3d/physics_engine="Jolt Physics"

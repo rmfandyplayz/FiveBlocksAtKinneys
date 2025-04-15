@@ -1,3 +1,81 @@
-[gd_scene format=3 uid="uid://dh02cx54ftw60"]
+[gd_scene load_steps=3 format=3 uid="uid://dh02cx54ftw60"]
+
+[ext_resource type="Script" uid="uid://qn76mq6grnki" path="res://Scripts/GameUI/GameUI.gd" id="1_37hul"]
+[ext_resource type="Texture2D" uid="uid://dfrk1hymh6hvp" path="res://Media/UserInterface/CameraChangeHover.png" id="1_tyage"]
 
 [node name="GameUI" type="CanvasLayer"]
+script = ExtResource("1_37hul")
+
+[node name="CameraControls" type="Node" parent="."]
+
+[node name="LookLeft" type="TextureRect" parent="CameraControls"]
+custom_minimum_size = Vector2(450, 40)
+anchors_preset = -1
+anchor_left = 0.018
+anchor_top = 0.3
+anchor_right = 0.042
+anchor_bottom = 0.7
+offset_left = -246.56
+offset_top = 196.0
+offset_right = 257.36
+offset_bottom = -191.0
+grow_vertical = 2
+rotation = 1.5708
+pivot_offset = Vector2(275, 22)
+size_flags_horizontal = 0
+texture = ExtResource("1_tyage")
+expand_mode = 1
+
+[node name="LookRight" type="TextureRect" parent="CameraControls"]
+custom_minimum_size = Vector2(450, 40)
+anchors_preset = -1
+anchor_left = 0.956
+anchor_top = 0.3
+anchor_right = 0.979
+anchor_bottom = 0.7
+offset_left = -253.52
+offset_top = 193.5
+offset_right = 252.32
+offset_bottom = -193.5
+grow_horizontal = 0
+grow_vertical = 2
+rotation = -1.5708
+pivot_offset = Vector2(275, 22)
+size_flags_horizontal = 0
+texture = ExtResource("1_tyage")
+expand_mode = 1
+
+[node name="LookDown" type="TextureRect" parent="CameraControls"]
+anchors_preset = -1
+anchor_left = 0.34
+anchor_top = 0.93
+anchor_right = 0.66
+anchor_bottom = 0.972
+offset_left = -57.8
+offset_top = 0.599915
+offset_right = 57.7999
+offset_bottom = 0.23999
+grow_horizontal = 2
+grow_vertical = 0
+pivot_offset = Vector2(365, 22.5)
+texture = ExtResource("1_tyage")
+
+[node name="LookUp" type="TextureRect" parent="CameraControls"]
+anchors_preset = -1
+anchor_left = 0.34
+anchor_top = 0.028
+anchor_right = 0.66
+anchor_bottom = 0.069
+offset_left = -57.8
+offset_top = -0.240002
+offset_right = 57.7999
+offset_bottom = 0.479996
+grow_horizontal = 2
+rotation = 3.14159
+pivot_offset = Vector2(365, 22.5)
+texture = ExtResource("1_tyage")
+
+[connection signal="mouse_entered" from="CameraControls/LookLeft" to="." method="_on_look_left"]
+[connection signal="mouse_entered" from="CameraControls/LookRight" to="." method="_on_look_right"]
+[connection signal="mouse_entered" from="CameraControls/LookDown" to="." method="_on_look_down"]
+[connection signal="mouse_entered" from="CameraControls/LookUp" to="." method="_on_look_up"]
