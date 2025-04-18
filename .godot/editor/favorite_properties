@@ -1,3 +1,7 @@
 [Control]
 
 properties=PackedStringArray("size", "position", "rotation", "scale", "pivot_offset")
+
+[Node3D]
+
+properties=PackedStringArray("position", "rotation", "scale")

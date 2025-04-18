@@ -3,8 +3,12 @@
 [ext_resource type="Script" uid="uid://qn76mq6grnki" path="res://Scripts/GameUI/GameUI.gd" id="1_37hul"]
 [ext_resource type="Texture2D" uid="uid://dfrk1hymh6hvp" path="res://Media/UserInterface/CameraChangeHover.png" id="1_tyage"]
 
-[node name="GameUI" type="CanvasLayer"]
+[node name="GameUI" type="CanvasLayer" node_paths=PackedStringArray("turnCamLeftCntrl", "turnCamRightCntrl", "turnCamUpCntrl", "turnCamDownCntrl")]
 script = ExtResource("1_37hul")
+turnCamLeftCntrl = NodePath("CameraControls/LookLeft")
+turnCamRightCntrl = NodePath("CameraControls/LookRight")
+turnCamUpCntrl = NodePath("CameraControls/LookDown")
+turnCamDownCntrl = NodePath("CameraControls/LookUp")
 
 [node name="CameraControls" type="Node" parent="."]
 

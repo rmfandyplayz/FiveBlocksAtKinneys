@@ -1,2 +1,5 @@
+res://Scenes/Game.tscn
 res://Scenes/GameUI.tscn
+res://Scenes/Player.tscn
+res://Scripts/Player.gd
 res://Scripts/GameUI/GameUI.gd

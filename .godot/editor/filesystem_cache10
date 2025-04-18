@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1744650016
+::res://::1744990313
 README.md::TextFile/TextFile::-1::1744043964::0::1::::<><><>0<>0<><>::
 ::res://Media/::1744045226
 ::res://Media/3DModels/::1744044445
@@ -11,8 +11,12 @@ yourmotherColorized.png::CompressedTexture2D/CompressedTexture2D::36452710137590
 ::res://Media/Sprites/::1744045197
 ::res://Media/UserInterface/::1744215939
 CameraChangeHover.png::CompressedTexture2D/CompressedTexture2D::7545954696952236893::1744215180::1744215939::1::::<><><>0<>0<>645e4257dffc52c7d5b219b7fbb49756<>res://.godot/imported/CameraChangeHover.png-0a67cff1bf00c9c3600d055521a24ea2.ctex::
-::res://Scenes/::1744650012
-Game.tscn::PackedScene::6391398195347702351::1744650012::0::1::::<><><>0<>0<><>::uid://dh02cx54ftw60::::res://Scenes/GameUI.tscn
-GameUI.tscn::PackedScene::7703837586495796631::1744650012::0::1::::<><><>0<>0<><>::uid://dfrk1hymh6hvp::::res://Media/UserInterface/CameraChangeHover.png
-::res://Scripts/::1744044425
+::res://Scenes/::1744822237
+Game.tscn::PackedScene::6391398195347702351::1744822237::0::1::::<><><>0<>0<><>::uid://dh02cx54ftw60::::res://Scenes/GameUI.tscn<>uid://b5usdea6wy0dw::::res://Scenes/Player.tscn
+GameUI.tscn::PackedScene::7703837586495796631::1744820997::0::1::::<><><>0<>0<><>::uid://qn76mq6grnki::::res://Scripts/GameUI/GameUI.gd<>uid://dfrk1hymh6hvp::::res://Media/UserInterface/CameraChangeHover.png
+Player.tscn::PackedScene::4534472022699049568::1744820041::0::1::::<><><>0<>0<><>::uid://i7r6t553ccv7::::res://Scripts/Player.gd
+::res://Scripts/::1744822207
+Player.gd::GDScript::628659431410600578::1744822207::0::1::::<>Node3D<><>0<>0<><>::
+::res://Scripts/GameUI/::1744822037
+GameUI.gd::GDScript::1151857368805145944::1744822037::0::1::::<>CanvasLayer<><>0<>0<><>::
 ::res://Uncategorized-Misc/::1744044434
