@@ -16,10 +16,12 @@ enum cameraDirections
 
 signal turnCamera(direction : cameraDirections)
 
+
 func _ready() -> void:
 	HideCameraControl(cameraDirections.UP)
-	HideCameraControl(cameraDirections.DOWN)
+	
 
+#these 4 funcs below are the first to detect player mouse hovering over those controls
 func _on_look_left() -> void:
 	turnCamera.emit(cameraDirections.LEFT)
 
@@ -39,7 +41,24 @@ func _on_player_turning_camera(turnDuration: float, turnDirection : int) -> void
 		DeactivateCameraControl(1, true)
 		await get_tree().create_timer(turnDuration).timeout
 		ActivateCameraControl(1, true)
-
+	elif(turnDirection == cameraDirections.DOWN):
+		DeactivateCameraControl(1, true)
+		HideCameraControl(1, true)
+		await get_tree().create_timer(turnDuration).timeout
+		ActivateCameraControl(cameraDirections.UP)
+		ShowCameraControl(cameraDirections.UP)
+	elif(turnDirection == cameraDirections.UP):
+		DeactivateCameraControl(1, true)
+		HideCameraControl(1, true)
+		await get_tree().create_timer(turnDuration).timeout
+		ActivateCameraControl(cameraDirections.DOWN)
+		ShowCameraControl(cameraDirections.DOWN)
+		ActivateCameraControl(cameraDirections.LEFT)
+		ShowCameraControl(cameraDirections.LEFT)
+		ActivateCameraControl(cameraDirections.RIGHT)
+		ShowCameraControl(cameraDirections.RIGHT)
+		
+#region Camera control stuff
 
 # deactivate = still show it on the screen, but u can't interact
 # hide = make the control invisible, aka u can't see it nor interact with it
@@ -82,7 +101,7 @@ func HideCameraControl(camera : cameraDirections = 1, hideAll : bool = false):
 	else:
 		var checkedCamera : TextureRect = CheckCameraDirection(camera)
 		checkedCamera.visible = false
-	
+
 func ShowCameraControl(camera : cameraDirections = 1, showAll : bool = false):
 	if(showAll == true):
 		turnCamLeftCntrl.visible = true
@@ -103,3 +122,5 @@ func CheckCameraDirection(cameraDirection : cameraDirections) -> TextureRect:
 		return turnCamUpCntrl
 	else: # down
 		return turnCamDownCntrl
+
+#endregion

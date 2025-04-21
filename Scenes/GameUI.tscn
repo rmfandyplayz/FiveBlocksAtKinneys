@@ -7,8 +7,8 @@
 script = ExtResource("1_37hul")
 turnCamLeftCntrl = NodePath("CameraControls/LookLeft")
 turnCamRightCntrl = NodePath("CameraControls/LookRight")
-turnCamUpCntrl = NodePath("CameraControls/LookDown")
-turnCamDownCntrl = NodePath("CameraControls/LookUp")
+turnCamUpCntrl = NodePath("CameraControls/LookUp")
+turnCamDownCntrl = NodePath("CameraControls/LookDown")
 
 [node name="CameraControls" type="Node" parent="."]
 

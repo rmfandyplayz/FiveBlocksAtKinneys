@@ -1,22 +1,22 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1744990313
+::res://::1745252391
 README.md::TextFile/TextFile::-1::1744043964::0::1::::<><><>0<>0<><>::
 ::res://Media/::1744045226
 ::res://Media/3DModels/::1744044445
 ::res://Media/Others/::1744213324
-boot splash.png::CompressedTexture2D/CompressedTexture2D::7221756295175258079::1744045249::1744045253::1::::<><><>0<>0<>cbd59d75b0a07f8d9591c91af62017bb<>res://.godot/imported/boot splash.png-3a40fa43507b394292b1effca670900d.ctex::
-feddy mewing.png::CompressedTexture2D/CompressedTexture2D::6312841260525457706::1744045180::1744045180::1::::<><><>0<>0<>5bb1cd1e3f619ae3ca194b35d31838e7<>res://.godot/imported/feddy mewing.png-f8fd03d6ab70bebd2a1d44b371021032.ctex::
+boot splash.png::CompressedTexture2D/CompressedTexture2D::7221756295175258079::1744045249::1745252739::1::::<><><>0<>0<>020484b8b3a1e4d9966a72375085e29b<>res://.godot/imported/boot splash.png-3a40fa43507b394292b1effca670900d.s3tc.ctex::
+feddy mewing.png::CompressedTexture2D/CompressedTexture2D::6312841260525457706::1744045180::1745252768::1::::<><><>0<>0<>afed0507530f07891d4ddd8ee05f211d<>res://.godot/imported/feddy mewing.png-f8fd03d6ab70bebd2a1d44b371021032.s3tc.ctex::
 icon.svg::CompressedTexture2D/CompressedTexture2D::6238506953677126223::1744043764::1744213324::1::::<><><>0<>0<>6090ad4c90e1152ebcfe0b7d7d9cb5fd<>res://.godot/imported/icon.svg-2efe6628bbabdeb4bd1d126a990074bf.ctex::
-yourmotherColorized.png::CompressedTexture2D/CompressedTexture2D::3645271013759005437::1744213238::1744213238::1::::<><><>0<>0<>749646abf0fbffbe1804db3580564434<>res://.godot/imported/yourmotherColorized.png-837b1cf3a3665e6d9aec2dfe8d2bbfe2.ctex::
+yourmotherColorized.png::CompressedTexture2D/CompressedTexture2D::3645271013759005437::1744213238::1745252755::1::::<><><>0<>0<>fc90c7f8465fb3cac8ca6862d3dd17e0<>res://.godot/imported/yourmotherColorized.png-837b1cf3a3665e6d9aec2dfe8d2bbfe2.s3tc.ctex::
 ::res://Media/Sprites/::1744045197
 ::res://Media/UserInterface/::1744215939
 CameraChangeHover.png::CompressedTexture2D/CompressedTexture2D::7545954696952236893::1744215180::1744215939::1::::<><><>0<>0<>645e4257dffc52c7d5b219b7fbb49756<>res://.godot/imported/CameraChangeHover.png-0a67cff1bf00c9c3600d055521a24ea2.ctex::
-::res://Scenes/::1744822237
-Game.tscn::PackedScene::6391398195347702351::1744822237::0::1::::<><><>0<>0<><>::uid://dh02cx54ftw60::::res://Scenes/GameUI.tscn<>uid://b5usdea6wy0dw::::res://Scenes/Player.tscn
-GameUI.tscn::PackedScene::7703837586495796631::1744820997::0::1::::<><><>0<>0<><>::uid://qn76mq6grnki::::res://Scripts/GameUI/GameUI.gd<>uid://dfrk1hymh6hvp::::res://Media/UserInterface/CameraChangeHover.png
-Player.tscn::PackedScene::4534472022699049568::1744820041::0::1::::<><><>0<>0<><>::uid://i7r6t553ccv7::::res://Scripts/Player.gd
-::res://Scripts/::1744822207
-Player.gd::GDScript::628659431410600578::1744822207::0::1::::<>Node3D<><>0<>0<><>::
-::res://Scripts/GameUI/::1744822037
-GameUI.gd::GDScript::1151857368805145944::1744822037::0::1::::<>CanvasLayer<><>0<>0<><>::
+::res://Scenes/::1745252721
+Game.tscn::PackedScene::6391398195347702351::1745252721::0::1::::<><><>0<>0<><>::uid://dh02cx54ftw60::::res://Scenes/GameUI.tscn<>uid://b5usdea6wy0dw::::res://Scenes/Player.tscn
+GameUI.tscn::PackedScene::7703837586495796631::1745252721::0::1::::<><><>0<>0<><>::uid://qn76mq6grnki::::res://Scripts/GameUI/GameUI.gd<>uid://dfrk1hymh6hvp::::res://Media/UserInterface/CameraChangeHover.png
+Player.tscn::PackedScene::4534472022699049568::1745252721::0::1::::<><><>0<>0<><>::uid://i7r6t553ccv7::::res://Scripts/Player.gd
+::res://Scripts/::1744994256
+Player.gd::GDScript::628659431410600578::1744994256::0::1::::<>Node3D<><>0<>0<><>::
+::res://Scripts/GameUI/::1744994113
+GameUI.gd::GDScript::1151857368805145944::1744994113::0::1::::<>CanvasLayer<><>0<>0<><>::
 ::res://Uncategorized-Misc/::1744044434
