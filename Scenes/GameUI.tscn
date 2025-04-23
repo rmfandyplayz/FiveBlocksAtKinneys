@@ -1,14 +1,15 @@
 [gd_scene load_steps=3 format=3 uid="uid://dh02cx54ftw60"]
 
 [ext_resource type="Script" uid="uid://qn76mq6grnki" path="res://Scripts/GameUI/GameUI.gd" id="1_37hul"]
-[ext_resource type="Texture2D" uid="uid://dfrk1hymh6hvp" path="res://Media/UserInterface/CameraChangeHover.png" id="1_tyage"]
+[ext_resource type="Texture2D" uid="uid://dfrk1hymh6hvp" path="res://Assets/UserInterface/CameraChangeHover.png" id="1_tyage"]
 
-[node name="GameUI" type="CanvasLayer" node_paths=PackedStringArray("turnCamLeftCntrl", "turnCamRightCntrl", "turnCamUpCntrl", "turnCamDownCntrl")]
+[node name="GameUI" type="CanvasLayer" node_paths=PackedStringArray("turnCamLeftCntrl", "turnCamRightCntrl", "turnCamUpCntrl", "turnCamDownCntrl", "camTurnCooldownTimer")]
 script = ExtResource("1_37hul")
 turnCamLeftCntrl = NodePath("CameraControls/LookLeft")
 turnCamRightCntrl = NodePath("CameraControls/LookRight")
 turnCamUpCntrl = NodePath("CameraControls/LookUp")
 turnCamDownCntrl = NodePath("CameraControls/LookDown")
+camTurnCooldownTimer = NodePath("CameraTurnCooldown")
 
 [node name="CameraControls" type="Node" parent="."]
 
@@ -78,6 +79,9 @@ grow_horizontal = 2
 rotation = 3.14159
 pivot_offset = Vector2(365, 22.5)
 texture = ExtResource("1_tyage")
+
+[node name="CameraTurnCooldown" type="Timer" parent="."]
+wait_time = 0.7
 
 [connection signal="mouse_entered" from="CameraControls/LookLeft" to="." method="_on_look_left"]
 [connection signal="mouse_entered" from="CameraControls/LookRight" to="." method="_on_look_right"]

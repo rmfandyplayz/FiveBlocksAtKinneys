@@ -13,6 +13,7 @@ enum cameraDirections
 @export var turnCamUpCntrl : TextureRect
 @export var turnCamDownCntrl : TextureRect
 
+@export var camTurnCooldownTimer : Timer
 
 signal turnCamera(direction : cameraDirections)
 
@@ -37,26 +38,39 @@ func _on_look_up() -> void:
 
 
 func _on_player_turning_camera(turnDuration: float, turnDirection : int) -> void:
+	camTurnCooldownTimer.wait_time = turnDuration
+	
 	if(turnDirection == cameraDirections.LEFT or turnDirection == cameraDirections.RIGHT):
 		DeactivateCameraControl(1, true)
-		await get_tree().create_timer(turnDuration).timeout
+		
+		camTurnCooldownTimer.start()
+		await camTurnCooldownTimer.timeout
+		
 		ActivateCameraControl(1, true)
 	elif(turnDirection == cameraDirections.DOWN):
 		DeactivateCameraControl(1, true)
 		HideCameraControl(1, true)
-		await get_tree().create_timer(turnDuration).timeout
+		
+		camTurnCooldownTimer.start()
+		await camTurnCooldownTimer.timeout
+		
 		ActivateCameraControl(cameraDirections.UP)
 		ShowCameraControl(cameraDirections.UP)
 	elif(turnDirection == cameraDirections.UP):
 		DeactivateCameraControl(1, true)
 		HideCameraControl(1, true)
-		await get_tree().create_timer(turnDuration).timeout
+		
+		camTurnCooldownTimer.start()
+		await camTurnCooldownTimer.timeout
+		
 		ActivateCameraControl(cameraDirections.DOWN)
 		ShowCameraControl(cameraDirections.DOWN)
 		ActivateCameraControl(cameraDirections.LEFT)
 		ShowCameraControl(cameraDirections.LEFT)
 		ActivateCameraControl(cameraDirections.RIGHT)
 		ShowCameraControl(cameraDirections.RIGHT)
+		
+		
 		
 #region Camera control stuff
 

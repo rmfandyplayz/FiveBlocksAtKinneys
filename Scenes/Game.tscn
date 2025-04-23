@@ -39,6 +39,7 @@ mesh = SubResource("PrismMesh_b2bpf")
 gameUI = NodePath("../GameUI")
 camera = NodePath("../Camera")
 cameraTurnSeconds = 0.5
+lookDownCamAngle = Vector3(-30, 0, 0)
 
 [node name="Camera" type="Camera3D" parent="."]
 fov = 80.0

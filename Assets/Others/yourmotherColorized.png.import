@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://da5jjhmeio3lj"
-path.s3tc="res://.godot/imported/boot splash.png-3a40fa43507b394292b1effca670900d.s3tc.ctex"
+uid="uid://br62c0winrs4d"
+path.s3tc="res://.godot/imported/yourmotherColorized.png-44f3777a7e2b7ec64af80915e68b795e.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Media/Others/boot splash.png"
-dest_files=["res://.godot/imported/boot splash.png-3a40fa43507b394292b1effca670900d.s3tc.ctex"]
+source_file="res://Assets/Others/yourmotherColorized.png"
+dest_files=["res://.godot/imported/yourmotherColorized.png-44f3777a7e2b7ec64af80915e68b795e.s3tc.ctex"]
 
 [params]
 
