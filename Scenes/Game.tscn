@@ -1,48 +1,28 @@
-[gd_scene load_steps=7 format=3 uid="uid://cxcbnoa0by8kh"]
+[gd_scene load_steps=4 format=3 uid="uid://cxcbnoa0by8kh"]
 
 [ext_resource type="PackedScene" uid="uid://dh02cx54ftw60" path="res://Scenes/GameUI.tscn" id="1_iukft"]
 [ext_resource type="PackedScene" uid="uid://b5usdea6wy0dw" path="res://Scenes/Player.tscn" id="2_gl6un"]
-
-[sub_resource type="TorusMesh" id="TorusMesh_gl6un"]
-
-[sub_resource type="SphereMesh" id="SphereMesh_j5yw3"]
-
-[sub_resource type="BoxMesh" id="BoxMesh_kldst"]
-
-[sub_resource type="PrismMesh" id="PrismMesh_b2bpf"]
+[ext_resource type="PackedScene" uid="uid://dlrm167o3l2ei" path="res://Scenes/MrKinneyRoom.scn" id="3_j5yw3"]
 
 [node name="Game" type="Node3D"]
 editor_description = "the root node for the scene where the main gameplay is supposed to happen"
 metadata/_edit_lock_ = true
 
-[node name="Tests" type="Node3D" parent="."]
-
-[node name="Donut" type="MeshInstance3D" parent="Tests"]
-transform = Transform3D(1, 0, 0, 0, 0.851736, -0.523971, 0, 0.523971, 0.851736, 0, 0, -2.64806)
-mesh = SubResource("TorusMesh_gl6un")
-
-[node name="Sphere" type="MeshInstance3D" parent="Tests"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.62363, 0, 0)
-mesh = SubResource("SphereMesh_j5yw3")
-
-[node name="Cube" type="MeshInstance3D" parent="Tests"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2.36)
-mesh = SubResource("BoxMesh_kldst")
-
-[node name="Prism" type="MeshInstance3D" parent="Tests"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.73089, 0, 0)
-mesh = SubResource("PrismMesh_b2bpf")
-
 [node name="GameUI" parent="." instance=ExtResource("1_iukft")]
 
+[node name="Camera" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.13654, 2.74574, 6.84191)
+fov = 60.0
+
 [node name="Player" parent="." node_paths=PackedStringArray("gameUI", "camera") instance=ExtResource("2_gl6un")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.13654, 2.74574, 6.84191)
 gameUI = NodePath("../GameUI")
 camera = NodePath("../Camera")
 cameraTurnSeconds = 0.5
-lookDownCamAngle = Vector3(-30, 0, 0)
+lookDownCamAngle = Vector3(-50, 0, 0)
+lookDownCameraFOV = 50.0
 
-[node name="Camera" type="Camera3D" parent="."]
-fov = 80.0
+[node name="MrKinneyRoom" parent="." instance=ExtResource("3_j5yw3")]
 
 [connection signal="turnCamera" from="GameUI" to="Player" method="_on_game_ui_turn_camera"]
 [connection signal="turningCamera" from="Player" to="GameUI" method="_on_player_turning_camera"]

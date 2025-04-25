@@ -1,6 +1,7 @@
+Node3D
+VisibleOnScreenNotifier3D
 Timer
 MeshInstance3D
-Node3D
 Camera3D
 TextureRect
 NinePatchRect

@@ -1,23 +1,35 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1745426880
+::res://::1745598494
 README.md::TextFile/TextFile::-1::1744043964::0::1::::<><><>0<>0<><>::
-::res://Assets/::1744045226
-::res://Assets/3DModels/::1745426928
-ppdl79.obj::Mesh::2525286811026305261::1745426928::1745426929::1::::<><><>0<>0<>81b790501b40d69c9aa10f6a6dbb8eff<>res://.godot/imported/ppdl79.obj-3e596d8c4a16195d55f6c7eb80899f28.mesh<*>res://.godot/imported/ppdl79.obj-3e596d8c4a16195d55f6c7eb80899f28.mesh::
-::res://Assets/Others/::1745426880
-boot splash.png::CompressedTexture2D::7221756295175258079::1744045249::1745426880::1::::<><><>0<>0<>a132ac0cae91e823b345d19579363912<>res://.godot/imported/boot splash.png-88bb0f40b021b67306a0e2402cf1334f.s3tc.ctex::
-feddy mewing.png::CompressedTexture2D::6312841260525457706::1744045180::1745426880::1::::<><><>0<>0<>9f89954f5b3bdbe79012a271ed11f011<>res://.godot/imported/feddy mewing.png-56a1885fa4cd1aa4fea4d6bee90ad6d1.s3tc.ctex::
-icon.svg::CompressedTexture2D::6238506953677126223::1744043764::1745426880::1::::<><><>0<>0<>eb2be580a1ae2a8a5cfe06ca060fc20a<>res://.godot/imported/icon.svg-c4c2542f7326ae81154afd86eafeb292.ctex::
-yourmotherColorized.png::CompressedTexture2D::3645271013759005437::1744213238::1745426880::1::::<><><>0<>0<>70fa1b47633e43515ef55cbccb8332af<>res://.godot/imported/yourmotherColorized.png-44f3777a7e2b7ec64af80915e68b795e.s3tc.ctex::
+::res://Assets/::1745598287
+::res://Assets/3DModels/::1745598494
+FBAK.fbx::PackedScene::8067814523773195812::1745598317::1745598495::1::::<><><>0<>0<>441a40ae6f2c5e8f2c3c9ea1d71048a0<>res://.godot/imported/FBAK.fbx-26da3220c88a448370eb8d22a12b0961.scn::uid://bpn8m2h12osly::::res://Assets/textures/Heghog.webp<>uid://5g3iws5758g1::::res://Assets/textures/00793.jpg<>uid://gmhmhvirej8x::::res://Assets/textures/Black-Suit---1_9f608683-2129-4321-8cd2-47efa69981b3_1.webp<>uid://biucm6ko614iq::::res://Assets/textures/figure-from-doors-was-inspired-by-stranger-things-v0-c1tih72f8yla1.webp<>uid://benti3353diu6::::res://Assets/textures/download.png<>uid://c31mpcs34ejxo::::res://Assets/textures/images.png<>uid://ck3dkqmk1pr7f::::res://Assets/textures/hqdefault.jpg
+::res://Assets/Materials/::1745596256
+::res://Assets/Others/::1745595909
+boot splash.png::CompressedTexture2D/CompressedTexture2D::7221756295175258079::1744045249::1745426880::1::::<><><>0<>0<>a132ac0cae91e823b345d19579363912<>res://.godot/imported/boot splash.png-88bb0f40b021b67306a0e2402cf1334f.s3tc.ctex::
+feddy mewing.png::CompressedTexture2D/CompressedTexture2D::6312841260525457706::1744045180::1745426880::1::::<><><>0<>0<>9f89954f5b3bdbe79012a271ed11f011<>res://.godot/imported/feddy mewing.png-56a1885fa4cd1aa4fea4d6bee90ad6d1.s3tc.ctex::
+icon.svg::CompressedTexture2D/CompressedTexture2D::6238506953677126223::1744043764::1745426880::1::::<><><>0<>0<>eb2be580a1ae2a8a5cfe06ca060fc20a<>res://.godot/imported/icon.svg-c4c2542f7326ae81154afd86eafeb292.ctex::
+yourmotherColorized.png::CompressedTexture2D/CompressedTexture2D::3645271013759005437::1744213238::1745426880::1::::<><><>0<>0<>70fa1b47633e43515ef55cbccb8332af<>res://.godot/imported/yourmotherColorized.png-44f3777a7e2b7ec64af80915e68b795e.s3tc.ctex::
 ::res://Assets/Sprites/::1744045197
-::res://Assets/UserInterface/::1745426880
-CameraChangeHover.png::CompressedTexture2D::7545954696952236893::1744215180::1745426880::1::::<><><>0<>0<>d4b44706071ed8da2d283739621c7750<>res://.godot/imported/CameraChangeHover.png-810b0cf45832606be725728c4c999873.ctex::
-::res://Scenes/::1745426904
-Game.tscn::PackedScene::6391398195347702351::1745426904::0::1::::<><><>0<>0<><>::uid://dh02cx54ftw60::::res://Scenes/GameUI.tscn<>uid://b5usdea6wy0dw::::res://Scenes/Player.tscn
-GameUI.tscn::PackedScene::7703837586495796631::1745426880::0::1::::<><><>0<>0<><>::uid://qn76mq6grnki::::res://Scripts/GameUI/GameUI.gd<>uid://dfrk1hymh6hvp::::res://Assets/UserInterface/CameraChangeHover.png
-Player.tscn::PackedScene::4534472022699049568::1745426848::0::1::::<><><>0<>0<><>::uid://i7r6t553ccv7::::res://Scripts/Player.gd
-::res://Scripts/::1745426845
-Player.gd::GDScript::628659431410600578::1745426845::0::1::::<>Node3D<><>0<>0<><>::
+::res://Assets/Textures/::1745598318
+7NeiaYupX5i0VmTAh-yLanbYJ9cJt7s8YKnpTEREeioJMp4lT4dT81ndkT5IEcQ.png::CompressedTexture2D/CompressedTexture2D::5167329010576887754::1745598308::1745598308::1::::<><><>0<>0<>0730f7d3d2067570d46ff582d33e78fd<>res://.godot/imported/7NeiaYupX5i0VmTAh-yLanbYJ9cJt7s8YKnpTEREeioJMp4lT4dT81ndkT5IEcQ.png-a352daeffdbedeb92df37b58e9500380.ctex::
+7NeiaYupX5i0VmTAh-yLanbYJ9cJt7s8YKnpTEREeioJMp4lT4dT81ndkT5IEcQ.webp::CompressedTexture2D/CompressedTexture2D::6438090378963460732::1745598308::1745598308::1::::<><><>0<>0<>64fe611fe3355e7a2a1692cdf3fc78f1<>res://.godot/imported/7NeiaYupX5i0VmTAh-yLanbYJ9cJt7s8YKnpTEREeioJMp4lT4dT81ndkT5IEcQ.webp-80f4149ff546399c25e09b2ffca72e1e.ctex::
+00793.jpg::CompressedTexture2D/CompressedTexture2D::2119767122541255962::1745598308::1745598494::1::::<><><>0<>0<>0b513eb5a34237dd55ca7d756fc395d7<>res://.godot/imported/00793.jpg-d10906e1eecd48bcff977c7b0ba8aa71.s3tc.ctex::
+Black-Suit---1_9f608683-2129-4321-8cd2-47efa69981b3_1.webp::CompressedTexture2D/CompressedTexture2D::446352443843849229::1745598308::1745598494::1::::<><><>0<>0<>48430d6c0ed7e3c3e1fddd3a9ace8d49<>res://.godot/imported/Black-Suit---1_9f608683-2129-4321-8cd2-47efa69981b3_1.webp-a5487d98140d05a7abe4859598c48c24.s3tc.ctex::
+download.png::CompressedTexture2D/CompressedTexture2D::2695182393570745343::1745598308::1745598494::1::::<><><>0<>0<>5129f848d61eca697a3f5b48bc6dff04<>res://.godot/imported/download.png-7d23d9bfc7afce9f4bbd035817a1157b.s3tc.ctex::
+figure-from-doors-was-inspired-by-stranger-things-v0-c1tih72f8yla1.webp::CompressedTexture2D/CompressedTexture2D::2989363495741424020::1745598308::1745598494::1::::<><><>0<>0<>95246e8486b8731f58a7a3fe94bca2dc<>res://.godot/imported/figure-from-doors-was-inspired-by-stranger-things-v0-c1tih72f8yla1.webp-e6ac3535b423cb653e4de680039bb54a.s3tc.ctex::
+Heghog.webp::CompressedTexture2D/CompressedTexture2D::3468116769516574326::1745598308::1745598494::1::::<><><>0<>0<>314cb5a001633771a8a2af4493dc0609<>res://.godot/imported/Heghog.webp-7cd3d7c32ca0ed9cb5387353c19a3270.s3tc.ctex::
+hqdefault.jpg::CompressedTexture2D/CompressedTexture2D::5532733249198512609::1745598308::1745598494::1::::<><><>0<>0<>7753a4e610a4c0e8682e7e89f1399eff<>res://.godot/imported/hqdefault.jpg-300e5c458427c526603170aacc739992.s3tc.ctex::
+images.png::CompressedTexture2D/CompressedTexture2D::6792558335842727856::1745598308::1745598494::1::::<><><>0<>0<>a997cc8dc631d3b0dda9c859041d7f5b<>res://.godot/imported/images.png-2fa74d83cb9b729dc3c7528addfde774.s3tc.ctex::
+::res://Assets/UserInterface/::1745598386
+CameraChangeHover.png::CompressedTexture2D/CompressedTexture2D::7545954696952236893::1744215180::1745426880::1::::<><><>0<>0<>d4b44706071ed8da2d283739621c7750<>res://.godot/imported/CameraChangeHover.png-810b0cf45832606be725728c4c999873.ctex::
+::res://Scenes/::1745598494
+Game.tscn::PackedScene::6391398195347702351::1745598406::0::1::::<><><>0<>0<><>::uid://dh02cx54ftw60::::res://Scenes/GameUI.tscn<>uid://b5usdea6wy0dw::::res://Scenes/Player.tscn
+GameUI.tscn::PackedScene/PackedScene::7703837586495796631::1745595009::0::1::::<><><>0<>0<><>::uid://qn76mq6grnki::::res://Scripts/GameUI/GameUI.gd<>uid://dfrk1hymh6hvp::::res://Assets/UserInterface/CameraChangeHover.png
+MrKinneyRoom.scn::PackedScene::4166970025144972022::1745598494::0::1::::<><><>0<>0<><>::uid://dm7dyx2y3x1d5::::res://Assets/3DModels/Five Blocks at Mr. Kinney's.fbx
+Player.tscn::PackedScene/PackedScene::4534472022699049568::1745595009::0::1::::<><><>0<>0<><>::uid://i7r6t553ccv7::::res://Scripts/Player.gd
+::res://Scripts/::1745595945
+Player.gd::GDScript/GDScript::628659431410600578::1745426845::0::1::::<>Node3D<><>0<>0<><>::
 ::res://Scripts/GameUI/::1745425337
-GameUI.gd::GDScript::1151857368805145944::1745425337::0::1::::<>CanvasLayer<><>0<>0<><>::
-::res://Uncategorized-Misc/::1744044434
+GameUI.gd::GDScript/GDScript::1151857368805145944::1745425337::0::1::::<>CanvasLayer<><>0<>0<><>::
+::res://Uncategorized-Misc/::1745595917

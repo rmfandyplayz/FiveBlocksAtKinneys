@@ -1,5 +1,4 @@
 res://Scenes/Game.tscn
+res://Scenes/MrKinneyRoom.scn
 res://Scenes/GameUI.tscn
-res://Scenes/Player.tscn
-res://Scripts/GameUI/GameUI.gd
 res://Scripts/Player.gd
