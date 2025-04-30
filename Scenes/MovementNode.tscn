@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://djxeg6wnj2vlh"]
+
+[ext_resource type="Script" uid="uid://dq7md5amy8drv" path="res://Scripts/MovementNode.gd" id="1_iu0wj"]
+
+[node name="MovementNode" type="Marker3D"]
+editor_description = "A node that gives animatronics different kinds of info, like where they're currently at, and what possible spots they can move to.
+"
+gizmo_extents = 0.4
+script = ExtResource("1_iu0wj")

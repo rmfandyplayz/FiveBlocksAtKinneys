@@ -1,0 +1,22 @@
+# Blender 4.4.1 MTL File: 'Five Blocks at Mr. Kinney's.blend'
+# www.blender.org
+
+newmtl mr_kinney
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd -o 0 0.20000002 0 C:/Users/pault/OneDrive/Documents/fbaktexture files/00793.jpg
+
+newmtl mr_kinney_clothes.002
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd -o 0 0.10000005 0 C:/Users/pault/OneDrive/Documents/fbaktexture files/Black-Suit---1_9f608683-2129-4321-8cd2-47efa69981b3_1.webp

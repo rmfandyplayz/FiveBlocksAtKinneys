@@ -1,4 +1,9 @@
 res://Scenes/Game.tscn
-res://Scenes/MrKinneyRoom.scn
 res://Scenes/GameUI.tscn
+res://Scenes/MrKinneyRoom.scn
+res://Scenes/MovementNode.tscn
+res://Scripts/MovementNode.gd
 res://Scripts/Player.gd
+res://Scenes/Block1.tscn
+res://Scripts/AnimatronicAI/BaseAnimatronicAI.gd
+res://Scripts/AnimatronicAI/BaseTAAI.gd

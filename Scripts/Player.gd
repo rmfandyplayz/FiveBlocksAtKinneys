@@ -5,13 +5,11 @@ signal switchCameraMode # switch between looking at computer/looking up
 
 @export_group("References")
 @export var gameUI : CanvasLayer
+@export var camera : Camera3D
 
 @export_group("Camera Stuff")
-@export var camera : Camera3D
-@export var cameraTurnSeconds : float # how long does it take for the camera to turn
-@export var currentCameraDirection : int = 0
-# 0 = down, looking at computer, 1 = up looking forward, 
-# 2 = up looking left, 3 = up looking behind, 4 = up looking right
+@export var cameraTurnSeconds : float ## How long does it take for the camera to turn?
+@export var currentCameraDirection : int = 0 ##0 = Looking down at computer, 1 = looking up forward, 2 = up looking left, 3 = looking behind, 4 = looking right.
 @export_custom(PROPERTY_HINT_RANGE, "-360,360,or_greater,or_less,degrees") var defaultCamAngle : Vector3
 @export_custom(PROPERTY_HINT_RANGE, "-360,360,or_greater,or_less,degrees") var lookDownCamAngle : Vector3
 @export_custom(PROPERTY_HINT_RANGE, "30,90,or_greater,or_less,degrees") var lookDownCameraFOV : float
