@@ -1,4 +1,5 @@
 extends Marker3D
+class_name MovementNode
 
 @export var availableMovementNodes : Array[Marker3D] ## Nodes that an animatronic can potentially move to from this position.
 @export var isOccupied : bool ## Is this node occupied by an animatronic?

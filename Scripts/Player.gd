@@ -22,17 +22,13 @@ func _ready() -> void:
 
 func _on_game_ui_turn_camera(direction : int) -> void:
 	if(direction == 1): # turn left
-		print("turn left (-90)")
 		if(camera.rotation_degrees.y + 90 > 180):
-			print("+90 > 180")
 			create_tween().set_ease(Tween.EASE_OUT).set_trans(Tween.TRANS_QUART).tween_property(camera, "rotation_degrees", Vector3(camera.rotation_degrees.x, -(camera.rotation_degrees.y - 90), camera.rotation_degrees.z), cameraTurnSeconds)
 		else:
 			create_tween().set_ease(Tween.EASE_OUT).set_trans(Tween.TRANS_QUART).tween_property(camera, "rotation_degrees", Vector3(camera.rotation_degrees.x, camera.rotation_degrees.y + 90, camera.rotation_degrees.z), cameraTurnSeconds)
 
 	elif(direction == 2): # turn right
-		print("turn right (-90)")
 		if(camera.rotation_degrees.y - 90 < -180):
-			print("-90 < -180")
 			create_tween().set_ease(Tween.EASE_OUT).set_trans(Tween.TRANS_QUART).tween_property(camera, "rotation_degrees", Vector3(camera.rotation_degrees.x, -(camera.rotation_degrees.y + 90), camera.rotation_degrees.z), cameraTurnSeconds)
 		else:	
 			create_tween().set_ease(Tween.EASE_OUT).set_trans(Tween.TRANS_QUART).tween_property(camera, "rotation_degrees", Vector3(camera.rotation_degrees.x, camera.rotation_degrees.y - 90, camera.rotation_degrees.z), cameraTurnSeconds)

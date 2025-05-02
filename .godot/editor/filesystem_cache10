@@ -1,9 +1,11 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1746027020
+::res://::1746204010
 README.md::TextFile/TextFile::-1::1744043964::0::1::::<><><>0<>0<><>::
 ::res://Assets/::1745859679
-::res://Assets/3DModels/::1745859855
-::res://Assets/Materials/::1745859445
+::res://Assets/3DModels/::1746204162
+MrKinneyDungeon.gltf::PackedScene::446198102062957740::1746204162::1746204162::1::::<><><>0<>0<>dc1395e09511914ade58d8323988ff5a<>res://.godot/imported/MrKinneyDungeon.gltf-09ccc320792e7f21322d53b2389b647f.scn::uid://b015d1nmgsire::::res://Assets/3DModels/MrKinneyDungeon_7NeiaYupX5i0VmTAh-yLanbYJ9cJt7s8YKnpTEREeioJMp4lT4dT81ndkT5IEcQ.webp
+MrKinneyDungeon_7NeiaYupX5i0VmTAh-yLanbYJ9cJt7s8YKnpTEREeioJMp4lT4dT81ndkT5IEcQ.webp::CompressedTexture2D::4196643849657694998::1746204162::1746204162::1::::<><><>0<>0<>b9c9edbdb358e69ac4cacd28dd542bac<>res://.godot/imported/MrKinneyDungeon_7NeiaYupX5i0VmTAh-yLanbYJ9cJt7s8YKnpTEREeioJMp4lT4dT81ndkT5IEcQ.webp-513cec0e46344d34f3ddfc9b5e977971.s3tc.ctex::
+::res://Assets/Materials/::1746204120
 ::res://Assets/Others/::1745595909
 boot splash.png::CompressedTexture2D/CompressedTexture2D::7221756295175258079::1744045249::1745426880::1::::<><><>0<>0<>a132ac0cae91e823b345d19579363912<>res://.godot/imported/boot splash.png-88bb0f40b021b67306a0e2402cf1334f.s3tc.ctex::
 feddy mewing.png::CompressedTexture2D/CompressedTexture2D::6312841260525457706::1744045180::1745426880::1::::<><><>0<>0<>9f89954f5b3bdbe79012a271ed11f011<>res://.godot/imported/feddy mewing.png-56a1885fa4cd1aa4fea4d6bee90ad6d1.s3tc.ctex::
@@ -13,15 +15,18 @@ yourmotherColorized.png::CompressedTexture2D/CompressedTexture2D::36452710137590
 ::res://Assets/Textures/::1745859261
 ::res://Assets/UserInterface/::1745598386
 CameraChangeHover.png::CompressedTexture2D/CompressedTexture2D::7545954696952236893::1744215180::1745426880::1::::<><><>0<>0<>d4b44706071ed8da2d283739621c7750<>res://.godot/imported/CameraChangeHover.png-810b0cf45832606be725728c4c999873.ctex::
-::res://Scenes/::1746028774
-Game.tscn::PackedScene::6391398195347702351::1746028421::0::1::::<><><>0<>0<><>::uid://dh02cx54ftw60::::res://Scenes/GameUI.tscn<>uid://b5usdea6wy0dw::::res://Scenes/Player.tscn<>uid://dlrm167o3l2ei::::res://Scenes/MrKinneyRoom.scn
-GameUI.tscn::PackedScene::7703837586495796631::1746027108::0::1::::<><><>0<>0<><>::uid://qn76mq6grnki::::res://Scripts/GameUI/GameUI.gd<>uid://dfrk1hymh6hvp::::res://Assets/UserInterface/CameraChangeHover.png
-MrKinneyRoom.scn::PackedScene::7967210465802973268::1746027108::0::1::::<><><>0<>0<><>::
-Player.tscn::PackedScene/PackedScene::4534472022699049568::1745595009::0::1::::<><><>0<>0<><>::uid://i7r6t553ccv7::::res://Scripts/Player.gd
-MovementNode.tscn::PackedScene::7838697577712789721::1746028811::0::1::::<><><>0<>0<><>::uid://dq7md5amy8drv::::res://Scripts/MovementNode.gd
-::res://Scripts/::1746028754
-Player.gd::GDScript::628659431410600578::1746028364::0::1::::<>Node3D<><>0<>0<><>::
-MovementNode.gd::GDScript::8349079174991748971::1746028811::0::1::::<>Node3D<><>0<>0<><>::
+::res://Scenes/::1746204159
+Block1.tscn::PackedScene::6391398195347702351::1746203903::0::1::::<><><>0<>0<><>::uid://dh02cx54ftw60::::res://Scenes/GameUI.tscn<>uid://b5usdea6wy0dw::::res://Scenes/Player.tscn<>uid://dlrm167o3l2ei::::res://Scenes/MrKinneyRoom.scn
+GameUI.tscn::PackedScene::7703837586495796631::1746202825::0::1::::<><><>0<>0<><>::uid://qn76mq6grnki::::res://Scripts/GameUI/GameUI.gd<>uid://dfrk1hymh6hvp::::res://Assets/UserInterface/CameraChangeHover.png
+MovementNode.tscn::PackedScene::7838697577712789721::1746202825::0::1::::<><><>0<>0<><>::uid://dq7md5amy8drv::::res://Scripts/MovementNode.gd
+MrKinneyRoom.scn::PackedScene::7967210465802973268::1746204159::0::1::::<><><>0<>0<><>::
+Player.tscn::PackedScene::4534472022699049568::1746202825::0::1::::<><><>0<>0<><>::uid://i7r6t553ccv7::::res://Scripts/Player.gd
+::res://Scripts/::1746202454
+MovementNode.gd::GDScript::8349079174991748971::1746201567::0::1::::MovementNode<>Marker3D<><>0<>0<><>::
+Player.gd::GDScript::628659431410600578::1746202454::0::1::::<>Node3D<><>0<>0<><>::
+::res://Scripts/AnimatronicAI/::1746203481
+BaseAnimatronicAI.gd::GDScript::5742102400836607009::1746203481::0::1::::BaseAnimatronicAI<>Node3D<><>0<>0<><>::
+BaseTAAI.gd::GDScript::913063679857190322::1746203258::0::1::::BaseTAAI<>BaseAnimatronicAI<><>0<>0<><>::
 ::res://Scripts/GameUI/::1745425337
 GameUI.gd::GDScript/GDScript::1151857368805145944::1745425337::0::1::::<>CanvasLayer<><>0<>0<><>::
 ::res://Uncategorized-Misc/::1745595917
