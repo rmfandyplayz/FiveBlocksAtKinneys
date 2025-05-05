@@ -1,3 +1,5 @@
+OmniLight3D
+Node
 CollisionShape3D
 Area3D
 Sprite3D
@@ -9,5 +11,4 @@ MeshInstance3D
 Camera3D
 TextureRect
 NinePatchRect
-Node
 CanvasLayer

@@ -9,23 +9,25 @@ class_name BaseAnimatronicAI
 var currentMoveNode : MovementNode
 @export var availableMoveNodes : Array[MovementNode]
 
+@export var actionRotationChance : float
+@export var actionMoveChance : float
+
 ## meant for other scripts to initially assign a movement node to an animatronic
 func AssignMoveNode(node : MovementNode):
 	currentMoveNode = node
 
 ## performs a movement action (rotation or movement)
-func PerformAction():
+func PerformAction(): # so far, it's 30% chance of rotation and 70% chance of movement
 	var randomNum = randi_range(1, 100)
 	
 	if(randomNum <= 30): # rotation (50% for + or - 90 degrees)
 		var rotationRandom = randi_range(1, 2)
-		
+
 		if(rotationRandom == 1):
 			rotation_degrees.x += 90
 		elif(rotationRandom == 2):
 			rotation_degrees.x -= 90
-			
+
 	elif(randomNum >= 31): # movement
 		for i in len(availableMoveNodes):
 			var randomMoveNode : MovementNode = availableMoveNodes.pick_random()
-			

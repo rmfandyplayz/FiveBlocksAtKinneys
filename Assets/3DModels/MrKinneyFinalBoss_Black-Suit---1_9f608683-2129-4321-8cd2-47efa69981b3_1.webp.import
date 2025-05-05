@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b015d1nmgsire"
-path.s3tc="res://.godot/imported/MrKinneyDungeon_7NeiaYupX5i0VmTAh-yLanbYJ9cJt7s8YKnpTEREeioJMp4lT4dT81ndkT5IEcQ.webp-513cec0e46344d34f3ddfc9b5e977971.s3tc.ctex"
+uid="uid://dm1kwssy470q7"
+path.s3tc="res://.godot/imported/MrKinneyFinalBoss_Black-Suit---1_9f608683-2129-4321-8cd2-47efa69981b3_1.webp-1bc5427def8083fe4fbee95e2bd2483d.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "70d73209b25a952f3216bb56395f3c33"
+"md5": "e02c40d944988e11d50a0ff56b00815b"
 }
 
 [deps]
 
-source_file="res://Assets/3DModels/MrKinneyDungeon_7NeiaYupX5i0VmTAh-yLanbYJ9cJt7s8YKnpTEREeioJMp4lT4dT81ndkT5IEcQ.webp"
-dest_files=["res://.godot/imported/MrKinneyDungeon_7NeiaYupX5i0VmTAh-yLanbYJ9cJt7s8YKnpTEREeioJMp4lT4dT81ndkT5IEcQ.webp-513cec0e46344d34f3ddfc9b5e977971.s3tc.ctex"]
+source_file="res://Assets/3DModels/MrKinneyFinalBoss_Black-Suit---1_9f608683-2129-4321-8cd2-47efa69981b3_1.webp"
+dest_files=["res://.godot/imported/MrKinneyFinalBoss_Black-Suit---1_9f608683-2129-4321-8cd2-47efa69981b3_1.webp-1bc5427def8083fe4fbee95e2bd2483d.s3tc.ctex"]
 
 [params]
 

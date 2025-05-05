@@ -1,17 +1,143 @@
-[gd_scene load_steps=4 format=3 uid="uid://cxcbnoa0by8kh"]
+[gd_scene load_steps=5 format=3 uid="uid://cxcbnoa0by8kh"]
 
 [ext_resource type="PackedScene" uid="uid://dh02cx54ftw60" path="res://Scenes/GameUI.tscn" id="1_i5opr"]
 [ext_resource type="PackedScene" uid="uid://b5usdea6wy0dw" path="res://Scenes/Player.tscn" id="2_lr4cy"]
 [ext_resource type="PackedScene" uid="uid://dlrm167o3l2ei" path="res://Scenes/MrKinneyRoom.scn" id="3_mpxjc"]
 
+[sub_resource type="Environment" id="Environment_i5opr"]
+ambient_light_source = 3
+
 [node name="Block1" type="Node3D"]
 editor_description = "the root node for the scene where the main gameplay is supposed to happen"
 metadata/_edit_lock_ = true
+
+[node name="Lights" type="Node" parent="."]
+
+[node name="CeilingLight" type="OmniLight3D" parent="Lights"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.259841, 5.28629, 0.968507)
+light_color = Color(1, 1, 0.91, 1)
+light_energy = 0.1
+shadow_enabled = true
+omni_range = 10.0
+omni_attenuation = 0.0
+
+[node name="CeilingLight11" type="OmniLight3D" parent="Lights"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.259841, 5.28629, -4.99077)
+light_color = Color(1, 1, 0.91, 1)
+light_energy = 0.1
+shadow_enabled = true
+omni_range = 10.0
+omni_attenuation = 0.0
+
+[node name="CeilingLight14" type="OmniLight3D" parent="Lights"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.739, 5.28629, -4.99077)
+light_color = Color(1, 1, 0.91, 1)
+light_energy = 0.1
+shadow_enabled = true
+omni_range = 10.0
+omni_attenuation = 0.0
+
+[node name="CeilingLight15" type="OmniLight3D" parent="Lights"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.8549, 5.28629, -4.99077)
+light_color = Color(1, 1, 0.91, 1)
+light_energy = 0.1
+shadow_enabled = true
+omni_range = 10.0
+omni_attenuation = 0.0
+
+[node name="CeilingLight12" type="OmniLight3D" parent="Lights"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.25312, 5.28629, -4.99077)
+light_color = Color(1, 1, 0.91, 1)
+light_energy = 0.1
+shadow_enabled = true
+omni_range = 10.0
+omni_attenuation = 0.0
+
+[node name="CeilingLight13" type="OmniLight3D" parent="Lights"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.285, 5.28629, -4.99077)
+light_color = Color(1, 1, 0.91, 1)
+light_energy = 0.1
+shadow_enabled = true
+omni_range = 10.0
+omni_attenuation = 0.0
+
+[node name="CeilingLight2" type="OmniLight3D" parent="Lights"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.249405, 5.28629, 6.98546)
+light_color = Color(1, 1, 0.91, 1)
+light_energy = 0.1
+shadow_enabled = true
+omni_range = 10.0
+omni_attenuation = 0.0
+
+[node name="CeilingLight3" type="OmniLight3D" parent="Lights"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.24622, 5.28629, 0.968507)
+light_color = Color(1, 1, 0.91, 1)
+light_energy = 0.1
+shadow_enabled = true
+omni_range = 10.0
+omni_attenuation = 0.0
+
+[node name="CeilingLight4" type="OmniLight3D" parent="Lights"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.23579, 5.28629, 6.98546)
+light_color = Color(1, 1, 0.91, 1)
+light_energy = 0.1
+shadow_enabled = true
+omni_range = 10.0
+omni_attenuation = 0.0
+
+[node name="CeilingLight5" type="OmniLight3D" parent="Lights"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.2649, 5.28629, 0.968507)
+light_color = Color(1, 1, 0.91, 1)
+light_energy = 0.1
+shadow_enabled = true
+omni_range = 10.0
+omni_attenuation = 0.0
+
+[node name="CeilingLight6" type="OmniLight3D" parent="Lights"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.2545, 5.28629, 6.98546)
+light_color = Color(1, 1, 0.91, 1)
+light_energy = 0.1
+shadow_enabled = true
+omni_range = 10.0
+omni_attenuation = 0.0
+
+[node name="CeilingLight7" type="OmniLight3D" parent="Lights"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.78055, 5.28629, 0.968507)
+light_color = Color(1, 1, 0.91, 1)
+light_energy = 0.1
+shadow_enabled = true
+omni_range = 10.0
+omni_attenuation = 0.0
+
+[node name="CeilingLight8" type="OmniLight3D" parent="Lights"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.79099, 5.28629, 6.98546)
+light_color = Color(1, 1, 0.91, 1)
+light_energy = 0.1
+shadow_enabled = true
+omni_range = 10.0
+omni_attenuation = 0.0
+
+[node name="CeilingLight9" type="OmniLight3D" parent="Lights"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.8258, 5.28127, 0.965832)
+light_color = Color(1, 1, 0.91, 1)
+light_energy = 0.1
+shadow_enabled = true
+omni_range = 10.0
+omni_attenuation = 0.0
+
+[node name="CeilingLight10" type="OmniLight3D" parent="Lights"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.8363, 5.28127, 6.98278)
+light_color = Color(1, 1, 0.91, 1)
+light_energy = 0.1
+shadow_enabled = true
+omni_range = 10.0
+omni_attenuation = 0.0
 
 [node name="GameUI" parent="." instance=ExtResource("1_i5opr")]
 
 [node name="Camera" type="Camera3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.13654, 2.74574, 6.84191)
+environment = SubResource("Environment_i5opr")
 fov = 60.0
 
 [node name="Player" parent="." node_paths=PackedStringArray("gameUI", "camera") instance=ExtResource("2_lr4cy")]
