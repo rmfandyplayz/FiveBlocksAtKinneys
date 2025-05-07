@@ -1,8 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://cxcbnoa0by8kh"]
+[gd_scene load_steps=7 format=3 uid="uid://cxcbnoa0by8kh"]
 
 [ext_resource type="PackedScene" uid="uid://dh02cx54ftw60" path="res://Scenes/GameUI.tscn" id="1_i5opr"]
+[ext_resource type="PackedScene" uid="uid://djxeg6wnj2vlh" path="res://Scenes/MovementNode.tscn" id="1_mpxjc"]
 [ext_resource type="PackedScene" uid="uid://b5usdea6wy0dw" path="res://Scenes/Player.tscn" id="2_lr4cy"]
 [ext_resource type="PackedScene" uid="uid://dlrm167o3l2ei" path="res://Scenes/MrKinneyRoom.scn" id="3_mpxjc"]
+[ext_resource type="PackedScene" uid="uid://bsjudsgbbd1nr" path="res://Scenes/MrKinney.tscn" id="4_lr4cy"]
 
 [sub_resource type="Environment" id="Environment_i5opr"]
 ambient_light_source = 3
@@ -11,50 +13,124 @@ ambient_light_source = 3
 editor_description = "the root node for the scene where the main gameplay is supposed to happen"
 metadata/_edit_lock_ = true
 
+[node name="MovementNodes" type="Node" parent="."]
+
+[node name="MoveNodeRow1Col1" parent="MovementNodes" node_paths=PackedStringArray("availableMovementNodes") instance=ExtResource("1_mpxjc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.674, 0.55, -9.53243)
+availableMovementNodes = [NodePath("../MoveNodeRow2Col2"), NodePath("../MoveNodeRow1Col2")]
+
+[node name="MoveNodeRow1Col2" parent="MovementNodes" node_paths=PackedStringArray("availableMovementNodes") instance=ExtResource("1_mpxjc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.39818, 0.55, -9.53243)
+availableMovementNodes = [NodePath("../MoveNodeRow1Col1"), NodePath("../MoveNodeRow1Col3")]
+
+[node name="MoveNodeRow1Col3" parent="MovementNodes" node_paths=PackedStringArray("availableMovementNodes") instance=ExtResource("1_mpxjc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.695, 0.55, -9.53243)
+availableMovementNodes = [NodePath("../MoveNodeRow2Col5"), NodePath("../MoveNodeRow1Col2")]
+
+[node name="MoveNodeRow2Col1" parent="MovementNodes" node_paths=PackedStringArray("availableMovementNodes") instance=ExtResource("1_mpxjc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.1444, 0.560339, -6.04633)
+availableMovementNodes = [NodePath("../MoveNodeRow2Col2"), NodePath("../MoveNodeRow3Col1")]
+
+[node name="MoveNodeRow2Col2" parent="MovementNodes" node_paths=PackedStringArray("availableMovementNodes") instance=ExtResource("1_mpxjc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.674, 0.55, -6.0461)
+availableMovementNodes = [NodePath("../MoveNodeRow1Col1"), NodePath("../MoveNodeRow2Col1"), NodePath("../MoveNodeRow2Col3"), NodePath("../MoveNodeRow3Col2")]
+
+[node name="MoveNodeRow2Col3" parent="MovementNodes" node_paths=PackedStringArray("availableMovementNodes") instance=ExtResource("1_mpxjc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.156776, 0.55, -6.0461)
+availableMovementNodes = [NodePath("../MoveNodeRow2Col4"), NodePath("../MoveNodeRow2Col2"), NodePath("../MoveNodeRow3Col3")]
+
+[node name="MoveNodeRow2Col4" parent="MovementNodes" node_paths=PackedStringArray("availableMovementNodes") instance=ExtResource("1_mpxjc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.11777, 0.55, -6.0461)
+availableMovementNodes = [NodePath("../MoveNodeRow2Col3"), NodePath("../MoveNodeRow3Col4"), NodePath("../MoveNodeRow2Col5")]
+
+[node name="MoveNodeRow2Col5" parent="MovementNodes" node_paths=PackedStringArray("availableMovementNodes") instance=ExtResource("1_mpxjc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.695, 0.55, -6.046)
+availableMovementNodes = [NodePath("../MoveNodeRow3Col5"), NodePath("../MoveNodeRow2Col4"), NodePath("../MoveNodeRow1Col3")]
+
+[node name="MoveNodeRow3Col1" parent="MovementNodes" node_paths=PackedStringArray("availableMovementNodes") instance=ExtResource("1_mpxjc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.1444, 0.560339, -2.4011)
+availableMovementNodes = [NodePath("../MoveNodeRow2Col1"), NodePath("../MoveNodeRow4Col1")]
+
+[node name="MoveNodeRow3Col2" parent="MovementNodes" node_paths=PackedStringArray("availableMovementNodes") instance=ExtResource("1_mpxjc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.674, 0.55, -2.40086)
+availableMovementNodes = [NodePath("../MoveNodeRow2Col2"), NodePath("../MoveNodeRow4Col2")]
+
+[node name="MoveNodeRow3Col3" parent="MovementNodes" node_paths=PackedStringArray("availableMovementNodes") instance=ExtResource("1_mpxjc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.156776, 0.55, -2.40086)
+availableMovementNodes = [NodePath("../MoveNodeRow2Col3"), NodePath("../MoveNodeRow4Col3")]
+
+[node name="MoveNodeRow3Col4" parent="MovementNodes" node_paths=PackedStringArray("availableMovementNodes") instance=ExtResource("1_mpxjc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.11777, 0.55, -2.40086)
+availableMovementNodes = [NodePath("../MoveNodeRow2Col4"), NodePath("../MoveNodeRow4Col4")]
+
+[node name="MoveNodeRow3Col5" parent="MovementNodes" node_paths=PackedStringArray("availableMovementNodes") instance=ExtResource("1_mpxjc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.695, 0.55, -2.40076)
+availableMovementNodes = [NodePath("../MoveNodeRow2Col5"), NodePath("../MoveNodeRow4Col5")]
+
+[node name="MoveNodeRow4Col1" parent="MovementNodes" node_paths=PackedStringArray("availableMovementNodes") instance=ExtResource("1_mpxjc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.1444, 0.560339, 0.793242)
+availableMovementNodes = [NodePath("../MoveNodeRow3Col1"), NodePath("../MoveNodeRow5Col1")]
+
+[node name="MoveNodeRow4Col2" parent="MovementNodes" node_paths=PackedStringArray("availableMovementNodes") instance=ExtResource("1_mpxjc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.674, 0.55, 0.793477)
+availableMovementNodes = [NodePath("../MoveNodeRow3Col2"), NodePath("../MoveNodeRow5Col2")]
+
+[node name="MoveNodeRow4Col3" parent="MovementNodes" node_paths=PackedStringArray("availableMovementNodes") instance=ExtResource("1_mpxjc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.156776, 0.55, 0.793477)
+availableMovementNodes = [NodePath("../MoveNodeRow3Col3"), NodePath("../MoveNodeRow5Col3")]
+
+[node name="MoveNodeRow4Col4" parent="MovementNodes" node_paths=PackedStringArray("availableMovementNodes") instance=ExtResource("1_mpxjc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.11777, 0.55, 0.793477)
+availableMovementNodes = [NodePath("../MoveNodeRow3Col4"), NodePath("../MoveNodeRow5Col4")]
+
+[node name="MoveNodeRow4Col5" parent="MovementNodes" node_paths=PackedStringArray("availableMovementNodes") instance=ExtResource("1_mpxjc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.695, 0.55, 0.793574)
+availableMovementNodes = [NodePath("../MoveNodeRow3Col5"), NodePath("../MoveNodeRow5Col5")]
+
+[node name="MoveNodeRow5Col1" parent="MovementNodes" node_paths=PackedStringArray("availableMovementNodes") instance=ExtResource("1_mpxjc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.1444, 0.560339, 3.94521)
+availableMovementNodes = [NodePath("../MoveNodeRow4Col1"), NodePath("../MoveNodeRow6Col1")]
+
+[node name="MoveNodeRow5Col2" parent="MovementNodes" node_paths=PackedStringArray("availableMovementNodes") instance=ExtResource("1_mpxjc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.674, 0.55, 3.94545)
+availableMovementNodes = [NodePath("../MoveNodeRow4Col2"), NodePath("../MoveNodeRow6Col2")]
+
+[node name="MoveNodeRow5Col3" parent="MovementNodes" node_paths=PackedStringArray("availableMovementNodes") instance=ExtResource("1_mpxjc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.156776, 0.55, 3.94545)
+availableMovementNodes = [NodePath("../MoveNodeRow4Col3"), NodePath("../MoveNodeRow6Col3")]
+
+[node name="MoveNodeRow5Col4" parent="MovementNodes" node_paths=PackedStringArray("availableMovementNodes") instance=ExtResource("1_mpxjc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.11777, 0.55, 3.94545)
+availableMovementNodes = [NodePath("../MoveNodeRow4Col4"), NodePath("../MoveNodeRow6Col4")]
+
+[node name="MoveNodeRow5Col5" parent="MovementNodes" node_paths=PackedStringArray("availableMovementNodes") instance=ExtResource("1_mpxjc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.695, 0.55, 3.94554)
+availableMovementNodes = [NodePath("../MoveNodeRow4Col5"), NodePath("../MoveNodeRow6Col5")]
+
+[node name="MoveNodeRow6Col1" parent="MovementNodes" node_paths=PackedStringArray("availableMovementNodes") instance=ExtResource("1_mpxjc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.1444, 0.560339, 7.83291)
+availableMovementNodes = [NodePath("../MoveNodeRow6Col2"), NodePath("../MoveNodeRow5Col1")]
+
+[node name="MoveNodeRow6Col2" parent="MovementNodes" node_paths=PackedStringArray("availableMovementNodes") instance=ExtResource("1_mpxjc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.674, 0.55, 7.83314)
+availableMovementNodes = [NodePath("../MoveNodeRow6Col1"), NodePath("../MoveNodeRow6Col3"), NodePath("../MoveNodeRow5Col2")]
+
+[node name="MoveNodeRow6Col3" parent="MovementNodes" node_paths=PackedStringArray("availableMovementNodes") instance=ExtResource("1_mpxjc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.156776, 0.55, 7.83314)
+availableMovementNodes = [NodePath("../MoveNodeRow6Col2"), NodePath("../MoveNodeRow6Col4"), NodePath("../MoveNodeRow5Col3")]
+
+[node name="MoveNodeRow6Col4" parent="MovementNodes" node_paths=PackedStringArray("availableMovementNodes") instance=ExtResource("1_mpxjc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.11777, 0.55, 7.83314)
+availableMovementNodes = [NodePath("../MoveNodeRow6Col5"), NodePath("../MoveNodeRow6Col3"), NodePath("../MoveNodeRow5Col4")]
+
+[node name="MoveNodeRow6Col5" parent="MovementNodes" node_paths=PackedStringArray("availableMovementNodes") instance=ExtResource("1_mpxjc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.695, 0.55, 7.83324)
+availableMovementNodes = [NodePath("../MoveNodeRow6Col4"), NodePath("../MoveNodeRow5Col5")]
+
 [node name="Lights" type="Node" parent="."]
 
 [node name="CeilingLight" type="OmniLight3D" parent="Lights"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.259841, 5.28629, 0.968507)
-light_color = Color(1, 1, 0.91, 1)
-light_energy = 0.1
-shadow_enabled = true
-omni_range = 10.0
-omni_attenuation = 0.0
-
-[node name="CeilingLight11" type="OmniLight3D" parent="Lights"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.259841, 5.28629, -4.99077)
-light_color = Color(1, 1, 0.91, 1)
-light_energy = 0.1
-shadow_enabled = true
-omni_range = 10.0
-omni_attenuation = 0.0
-
-[node name="CeilingLight14" type="OmniLight3D" parent="Lights"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.739, 5.28629, -4.99077)
-light_color = Color(1, 1, 0.91, 1)
-light_energy = 0.1
-shadow_enabled = true
-omni_range = 10.0
-omni_attenuation = 0.0
-
-[node name="CeilingLight15" type="OmniLight3D" parent="Lights"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.8549, 5.28629, -4.99077)
-light_color = Color(1, 1, 0.91, 1)
-light_energy = 0.1
-shadow_enabled = true
-omni_range = 10.0
-omni_attenuation = 0.0
-
-[node name="CeilingLight12" type="OmniLight3D" parent="Lights"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.25312, 5.28629, -4.99077)
-light_color = Color(1, 1, 0.91, 1)
-light_energy = 0.1
-shadow_enabled = true
-omni_range = 10.0
-omni_attenuation = 0.0
-
-[node name="CeilingLight13" type="OmniLight3D" parent="Lights"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.285, 5.28629, -4.99077)
 light_color = Color(1, 1, 0.91, 1)
 light_energy = 0.1
 shadow_enabled = true
@@ -133,10 +209,53 @@ shadow_enabled = true
 omni_range = 10.0
 omni_attenuation = 0.0
 
+[node name="CeilingLight11" type="OmniLight3D" parent="Lights"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.259841, 5.28629, -4.99077)
+light_color = Color(1, 1, 0.91, 1)
+light_energy = 0.1
+shadow_enabled = true
+omni_range = 10.0
+omni_attenuation = 0.0
+
+[node name="CeilingLight12" type="OmniLight3D" parent="Lights"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.25312, 5.28629, -4.99077)
+light_color = Color(1, 1, 0.91, 1)
+light_energy = 0.1
+shadow_enabled = true
+omni_range = 10.0
+omni_attenuation = 0.0
+
+[node name="CeilingLight13" type="OmniLight3D" parent="Lights"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.285, 5.28629, -4.99077)
+light_color = Color(1, 1, 0.91, 1)
+light_energy = 0.1
+shadow_enabled = true
+omni_range = 10.0
+omni_attenuation = 0.0
+
+[node name="CeilingLight14" type="OmniLight3D" parent="Lights"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.739, 5.28629, -4.99077)
+light_color = Color(1, 1, 0.91, 1)
+light_energy = 0.1
+shadow_enabled = true
+omni_range = 10.0
+omni_attenuation = 0.0
+
+[node name="CeilingLight15" type="OmniLight3D" parent="Lights"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.8549, 5.28629, -4.99077)
+light_color = Color(1, 1, 0.91, 1)
+light_energy = 0.1
+shadow_enabled = true
+omni_range = 10.0
+omni_attenuation = 0.0
+
+[node name="MrKinneyChairPos" parent="." instance=ExtResource("1_mpxjc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.9465, 1.21143, -9.6842)
+
 [node name="GameUI" parent="." instance=ExtResource("1_i5opr")]
 
 [node name="Camera" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.13654, 2.74574, 6.84191)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.137, 3, 6.842)
 environment = SubResource("Environment_i5opr")
 fov = 60.0
 
@@ -149,6 +268,11 @@ lookDownCamAngle = Vector3(-50, 0, 0)
 lookDownCameraFOV = 50.0
 
 [node name="MrKinneyRoom" parent="." instance=ExtResource("3_mpxjc")]
+metadata/_edit_lock_ = true
+
+[node name="MrKinney" parent="." instance=ExtResource("4_lr4cy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.943, 0.55, -9.726)
+metadata/_edit_lock_ = true
 
 [connection signal="turnCamera" from="GameUI" to="Player" method="_on_game_ui_turn_camera"]
 [connection signal="turningCamera" from="Player" to="GameUI" method="_on_player_turning_camera"]

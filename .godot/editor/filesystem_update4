@@ -3,3 +3,6 @@ res://Scenes/MovementNode.tscn
 res://Scenes/Player.tscn
 res://Scenes/GameUI.tscn
 res://Scenes/MrKinneyRoom.scn
+res://Scenes/MrKinney.tscn
+res://Scripts/AnimatronicAI/MrKinneyAI.gd
+res://Scripts/AnimatronicAI/BaseAnimatronicAI.gd

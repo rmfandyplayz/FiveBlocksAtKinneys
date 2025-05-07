@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://k2ijg58x8e85"
-path="res://.godot/imported/MrKinneyInterrogationChamber.glb-7a621d2c08e7e97d62ad045ec39c7252.scn"
+uid="uid://b6lqsnrunhcvo"
+path="res://.godot/imported/Player.glb-812a5a7ef387b5fd3fe710ec456d0982.scn"
 
 [deps]
 
-source_file="res://Assets/3DModels/MrKinneyInterrogationChamber.glb"
-dest_files=["res://.godot/imported/MrKinneyInterrogationChamber.glb-7a621d2c08e7e97d62ad045ec39c7252.scn"]
+source_file="res://Assets/3DModels/Player.glb"
+dest_files=["res://.godot/imported/Player.glb-812a5a7ef387b5fd3fe710ec456d0982.scn"]
 
 [params]
 

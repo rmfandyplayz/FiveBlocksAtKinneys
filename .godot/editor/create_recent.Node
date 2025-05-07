@@ -1,12 +1,12 @@
-OmniLight3D
+Timer
 Node
+OmniLight3D
 CollisionShape3D
 Area3D
 Sprite3D
 Marker3D
 Node3D
 VisibleOnScreenNotifier3D
-Timer
 MeshInstance3D
 Camera3D
 TextureRect
