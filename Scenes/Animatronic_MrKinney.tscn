@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://b1bini3q65565" path="res://Scripts/AnimatronicAI/MrKinneyAI.gd" id="1_brb7y"]
 [ext_resource type="PackedScene" uid="uid://cbto57vefmgok" path="res://Assets/3DModels/MrKinneyFinalBoss.glb" id="1_np1ii"]
 
-[node name="MrKinney" type="Node3D"]
+[node name="Animatronic_MrKinney" type="Node3D"]
 editor_description = "mr kinney animatronic
 "
 script = ExtResource("1_brb7y")
