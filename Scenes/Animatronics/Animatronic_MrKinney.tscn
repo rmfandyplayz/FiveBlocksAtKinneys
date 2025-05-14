@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://bsjudsgbbd1nr"]
+
+[ext_resource type="Script" uid="uid://b1bini3q65565" path="res://Scripts/AnimatronicAI/MrKinneyAI.gd" id="1_brb7y"]
+[ext_resource type="PackedScene" uid="uid://cbto57vefmgok" path="res://Assets/3DModels/Characters/MrKinneyFinalBoss.glb" id="1_np1ii"]
+
+[node name="Animatronic_MrKinney" type="Node3D"]
+editor_description = "mr kinney animatronic
+"
+script = ExtResource("1_brb7y")
+
+[node name="Model" parent="." instance=ExtResource("1_np1ii")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.758057, 0)
+
+[node name="StayInSeatTimer" type="Timer" parent="."]
+one_shot = true

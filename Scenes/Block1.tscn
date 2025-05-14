@@ -1,17 +1,20 @@
-[gd_scene load_steps=8 format=3 uid="uid://cxcbnoa0by8kh"]
+[gd_scene load_steps=10 format=3 uid="uid://cxcbnoa0by8kh"]
 
 [ext_resource type="PackedScene" uid="uid://dh02cx54ftw60" path="res://Scenes/GameUI.tscn" id="1_i5opr"]
 [ext_resource type="PackedScene" uid="uid://djxeg6wnj2vlh" path="res://Scenes/MovementNode.tscn" id="1_mpxjc"]
+[ext_resource type="Script" uid="uid://1yjg3pvtpiv0" path="res://Scripts/Game.gd" id="1_vc4gx"]
 [ext_resource type="PackedScene" uid="uid://b5usdea6wy0dw" path="res://Scenes/Player.tscn" id="2_lr4cy"]
 [ext_resource type="PackedScene" uid="uid://dlrm167o3l2ei" path="res://Scenes/MrKinneyRoom.scn" id="3_mpxjc"]
-[ext_resource type="PackedScene" uid="uid://bsjudsgbbd1nr" path="res://Scenes/Animatronic_MrKinney.tscn" id="4_lr4cy"]
-[ext_resource type="PackedScene" uid="uid://bvmhgpwbrn5d6" path="res://Scenes/Animatronic_TA_Sanic.tscn" id="6_ymgc4"]
+[ext_resource type="PackedScene" uid="uid://bsjudsgbbd1nr" path="res://Scenes/Animatronics/Animatronic_MrKinney.tscn" id="4_lr4cy"]
+[ext_resource type="PackedScene" uid="uid://bvmhgpwbrn5d6" path="res://Scenes/Animatronics/Animatronic_TA_Sanic.tscn" id="6_ymgc4"]
+[ext_resource type="PackedScene" uid="uid://djsxcv2mvdkgu" path="res://Scenes/PlayerLaptop.tscn" id="7_boi63"]
 
 [sub_resource type="Environment" id="Environment_i5opr"]
 ambient_light_source = 3
 
 [node name="Block1" type="Node3D"]
 editor_description = "the root node for the scene where the main gameplay is supposed to happen"
+script = ExtResource("1_vc4gx")
 metadata/_edit_lock_ = true
 
 [node name="MrKinneyRoom" parent="." instance=ExtResource("3_mpxjc")]
@@ -268,8 +271,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.13654, 2.74574, 6.84191)
 gameUI = NodePath("../GameUI")
 camera = NodePath("../Camera")
 cameraTurnSeconds = 0.5
-lookDownCamAngle = Vector3(-50, 0, 0)
-lookDownCameraFOV = 50.0
+lookDownCamAngle = Vector3(-28, 0, 0)
+lookDownCameraFOV = 35.0
 
 [node name="Animatronics" type="Node" parent="."]
 
@@ -281,8 +284,10 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.2142, 0, -13.3217)
 temp_spawnLocation = NodePath("../../MovementNodes/MoveNodeRow4Col5")
 actionOpportunity = 99.0
 timeBetweenActionOpportunities = 0.2
-actionRotationChance = 40.0
-actionMoveChance = 60.0
+actionMoveChance = 90.0
+
+[node name="PlayerLaptop" parent="." instance=ExtResource("7_boi63")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.12747, 1.94032, 5.96474)
 
 [connection signal="turnCamera" from="GameUI" to="Player" method="_on_game_ui_turn_camera"]
 [connection signal="turningCamera" from="Player" to="GameUI" method="_on_player_turning_camera"]

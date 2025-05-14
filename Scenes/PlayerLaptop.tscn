@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://djsxcv2mvdkgu"]
+
+[ext_resource type="PackedScene" uid="uid://c3h7s1rh7ys4g" path="res://Assets/3DModels/Computers/PlayerMac.glb" id="1_yib26"]
+
+[node name="PlayerLaptop" type="Node3D"]
+editor_description = "the player's laptop which will display crap"
+
+[node name="PlayerMac" parent="." instance=ExtResource("1_yib26")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.21491)

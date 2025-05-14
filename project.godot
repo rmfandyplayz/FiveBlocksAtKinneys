@@ -21,7 +21,7 @@ config/icon="uid://cv68tqw0r86o1"
 
 [autoload]
 
-GameManager="*res://Scripts/GameManager.gd"
+GameManager="*res://Scripts/Game.gd"
 
 [display]
 

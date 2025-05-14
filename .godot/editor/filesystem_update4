@@ -5,5 +5,8 @@ res://Scenes/GameUI.tscn
 res://Scenes/MrKinneyRoom.scn
 res://Scenes/Animatronic_MrKinney.tscn
 res://Scenes/Animatronic_TA_Sanic.tscn
-res://Scripts/AnimatronicAI/BaseTAAI.gd
 res://Scripts/AnimatronicAI/BaseAnimatronicAI.gd
+res://Scenes/PlayerLaptop.tscn
+res://Scenes/Animatronics/Animatronic_MrKinney.tscn
+res://Scenes/Animatronics/Animatronic_TA_Sanic.tscn
+res://Scripts/Game.gd

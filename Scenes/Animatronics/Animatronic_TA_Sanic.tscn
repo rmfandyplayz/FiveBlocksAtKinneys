@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://bvmhgpwbrn5d6"]
+
+[ext_resource type="Script" uid="uid://naka4muiw4eg" path="res://Scripts/AnimatronicAI/BaseTAAI.gd" id="1_tbqwq"]
+[ext_resource type="PackedScene" uid="uid://dwutjfvdnbxqj" path="res://Assets/3DModels/Characters/Sanic.glb" id="2_hqloa"]
+
+[node name="Animatronic_TA_Sanic" type="Node3D" node_paths=PackedStringArray("actionOpportunityTimer")]
+script = ExtResource("1_tbqwq")
+actionOpportunity = 30.0
+timeBetweenActionOpportunities = 2.0
+actionOpportunityTimer = NodePath("ActionOpportunityTimer")
+
+[node name="Model" parent="." instance=ExtResource("2_hqloa")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.759435, 0)
+
+[node name="ActionOpportunityTimer" type="Timer" parent="."]
+one_shot = true
+
+[connection signal="timeout" from="ActionOpportunityTimer" to="." method="_on_action_opportunity_timer_timeout"]
