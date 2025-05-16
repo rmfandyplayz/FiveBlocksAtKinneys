@@ -1,5 +1,4 @@
 extends Node
-class_name Game
 
 ## a global script for the game scene that will control certain things, and has some 
 ## utility functions that any script within the game can use
@@ -7,8 +6,8 @@ class_name Game
 static var movementNodeParent : Node
 
 func _ready() -> void:
-	movementNodeParent = $MovementNodes
+	movementNodeParent = get_node("/root/Block1/MovementNodes")
 
 
-static func GetAllMovementNodes():
+static func GetAllMovementNodes() -> Array[Node]:
 	return movementNodeParent.get_children()

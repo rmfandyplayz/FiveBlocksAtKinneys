@@ -76,7 +76,7 @@ func _on_player_turning_camera(turnDuration: float, turnDirection : int) -> void
 
 # deactivate = still show it on the screen, but u can't interact
 # hide = make the control invisible, aka u can't see it nor interact with it
-func DeactivateCameraControl(camera : cameraDirections = 1, deactivateAll : bool = false):
+func DeactivateCameraControl(camera : cameraDirections = 1, deactivateAll : bool = false) -> void:
 	if(deactivateAll == true):
 		turnCamLeftCntrl.mouse_filter = Control.MOUSE_FILTER_IGNORE
 		turnCamLeftCntrl.self_modulate = Color(1, 0, 0, 0.4)
@@ -91,7 +91,7 @@ func DeactivateCameraControl(camera : cameraDirections = 1, deactivateAll : bool
 		checkedCamera.mouse_filter = Control.MOUSE_FILTER_IGNORE
 		checkedCamera.self_modulate = Color(1, 0, 0, 0.4)
 	
-func ActivateCameraControl(camera : cameraDirections = 1, activateAll : bool = false):
+func ActivateCameraControl(camera : cameraDirections = 1, activateAll : bool = false) -> void:
 	if(activateAll == true):
 		turnCamLeftCntrl.mouse_filter = Control.MOUSE_FILTER_PASS
 		turnCamLeftCntrl.self_modulate = Color.WHITE
@@ -106,7 +106,7 @@ func ActivateCameraControl(camera : cameraDirections = 1, activateAll : bool = f
 		checkedCamera.mouse_filter = Control.MOUSE_FILTER_PASS
 		checkedCamera.self_modulate = Color.WHITE
 	
-func HideCameraControl(camera : cameraDirections = 1, hideAll : bool = false):
+func HideCameraControl(camera : cameraDirections = 1, hideAll : bool = false) -> void:
 	if(hideAll == true):
 		turnCamLeftCntrl.visible = false
 		turnCamRightCntrl.visible = false
@@ -116,7 +116,7 @@ func HideCameraControl(camera : cameraDirections = 1, hideAll : bool = false):
 		var checkedCamera : TextureRect = CheckCameraDirection(camera)
 		checkedCamera.visible = false
 
-func ShowCameraControl(camera : cameraDirections = 1, showAll : bool = false):
+func ShowCameraControl(camera : cameraDirections = 1, showAll : bool = false) -> void:
 	if(showAll == true):
 		turnCamLeftCntrl.visible = true
 		turnCamRightCntrl.visible = true

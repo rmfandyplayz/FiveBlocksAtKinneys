@@ -13,7 +13,7 @@ signal switchCameraMode # switch between looking at computer/looking up
 @export_custom(PROPERTY_HINT_RANGE, "-360,360,or_greater,or_less,degrees") var defaultCamAngle : Vector3
 @export_custom(PROPERTY_HINT_RANGE, "-360,360,or_greater,or_less,degrees") var lookDownCamAngle : Vector3
 @export_custom(PROPERTY_HINT_RANGE, "30,90,or_greater,or_less,degrees") var lookDownCameraFOV : float
-var initialCameraFOV
+var initialCameraFOV : float
 
 
 func _ready() -> void:

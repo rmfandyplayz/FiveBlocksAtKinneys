@@ -1,8 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://b5usdea6wy0dw"]
-
-[ext_resource type="Script" uid="uid://i7r6t553ccv7" path="res://Scripts/Player.gd" id="1_rpqav"]
-
-[node name="Player" type="Node3D"]
-script = ExtResource("1_rpqav")
-
-[node name="Pivot" type="Node3D" parent="."]
