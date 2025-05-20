@@ -13,7 +13,7 @@
 ambient_light_source = 3
 
 [node name="Block1" type="Node3D"]
-editor_description = "the root node for the scene where the main gameplay is supposed to happen"
+editor_description = "the root node for the scenes where the main gameplay is supposed to happen"
 script = ExtResource("1_qr2md")
 metadata/_edit_lock_ = true
 
@@ -280,10 +280,10 @@ lookDownCameraFOV = 35.0
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.46761, 0.535001, -13.9643)
 
 [node name="Animatronic_TA_Sanic" parent="Animatronics_Characters" node_paths=PackedStringArray("temp_spawnLocation") instance=ExtResource("7_jhvsa")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.2142, 0, -13.3217)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.2351, -7.15256e-07, -13.3199)
 temp_spawnLocation = NodePath("../../MovementNodes/MoveNodeRow4Col5")
-actionOpportunity = 40.0
-timeBetweenActionOpportunities = 5.0
+actionOpportunity = 99.0
+timeBetweenActionOpportunities = 0.2
 actionMoveChance = 75.0
 
 [node name="NPCs" type="Node" parent="Animatronics_Characters"]

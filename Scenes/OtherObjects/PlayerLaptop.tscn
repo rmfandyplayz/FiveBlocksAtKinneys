@@ -1,9 +1,50 @@
-[gd_scene load_steps=2 format=3 uid="uid://djsxcv2mvdkgu"]
+[gd_scene load_steps=4 format=3 uid="uid://djsxcv2mvdkgu"]
 
 [ext_resource type="PackedScene" uid="uid://c3h7s1rh7ys4g" path="res://Assets/3DModels/Computers/PlayerMac.glb" id="1_yib26"]
+[ext_resource type="Script" uid="uid://bvadp3uoh1idl" path="res://Uncategorized-Misc/TestScript.gd" id="2_clnsn"]
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_clnsn"]
+viewport_path = NodePath("SubViewport")
 
 [node name="PlayerLaptop" type="Node3D"]
 editor_description = "the player's laptop which will display crap"
+metadata/_edit_lock_ = true
 
-[node name="PlayerMac" parent="." instance=ExtResource("1_yib26")]
+[node name="Model" parent="." instance=ExtResource("1_yib26")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.21491)
+metadata/_edit_lock_ = true
+
+[node name="Screen" type="Sprite3D" parent="."]
+transform = Transform3D(0.1, 0, 0, 0, 0.0956305, 0.0292372, 0, -0.0292372, 0.0956305, 0, 0.395328, -0.358934)
+texture = SubResource("ViewportTexture_clnsn")
+
+[node name="SubViewport" type="SubViewport" parent="."]
+disable_3d = true
+transparent_bg = true
+gui_embed_subwindows = true
+size = Vector2i(963, 610)
+
+[node name="OnScreenGUI" type="Control" parent="SubViewport"]
+editor_description = "put this control under the SubViewport to actually see it"
+layout_mode = 3
+anchors_preset = 0
+offset_right = 963.0
+offset_bottom = 610.0
+metadata/_edit_lock_ = true
+
+[node name="SwitchScreen" type="Button" parent="SubViewport/OnScreenGUI"]
+offset_left = 16.0
+offset_top = 529.0
+offset_right = 299.0
+offset_bottom = 593.0
+text = "switch screen"
+script = ExtResource("2_clnsn")
+
+[node name="Reference" type="ReferenceRect" parent="."]
+offset_right = 963.0
+offset_bottom = 610.0
+border_color = Color(0.801159, 0.00467369, 1, 1)
+border_width = 3.0
+metadata/_edit_lock_ = true
+
+[connection signal="pressed" from="SubViewport/OnScreenGUI/SwitchScreen" to="SubViewport/OnScreenGUI/SwitchScreen" method="_on_pressed"]
