@@ -16,6 +16,9 @@ var currentMoveNode : MovementNode ## the current movement node the animatronic 
 @export var actionMoveChance : float ## chance for animatronic to [b]MOVE[/b] per [code]actionOpportunity[/code]. [br]if this % chance doesn't hit, the bot will [b]rotate[/b] instead.
 @export var actionOpportunityTimer : Timer
 
+@export var screen : Node3D
+var EyesightModule = preload("res://Scripts/AnimatronicAI/EyeSight.gd").new()
+
 func SetCurrentMoveNode(node : MovementNode) -> void:
 	currentMoveNode = node
 
@@ -31,6 +34,10 @@ func SpawnAnimatronic(spawnNode : MovementNode) -> void:
 ## does what the name says. sets the pos of this animatronic to the pos of the movement node
 func SetAnimatronicPosition(movementNode : MovementNode) -> void:
 	position = movementNode.position
+	EyesightModule.screen = screen
+	var sawScreen : bool = EyesightModule.CanSeeScreen(self)
+	
+	print(sawScreen)
 	
 
 func GetPossibleMoveNodes() -> Array[MovementNode]:
