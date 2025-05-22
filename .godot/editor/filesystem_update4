@@ -1,10 +1,12 @@
-res://Scenes/Levels/Block1.tscn
+res://Scenes/Animatronics/Animatronic_MrKinney.tscn
 res://Scripts/GameManager.gd
+res://Scripts/AnimatronicAI/MrKinneyAI.gd
+res://Scenes/Levels/Block1.tscn
+res://Scripts/AnimatronicAI/BaseAnimatronicAI.gd
+res://Scripts/AnimatronicAI/AIModules/EyeSight.gd
+res://Scripts/AnimatronicAI/AIModules/Movement.gd
 res://Scenes/OtherCharacters/Player.tscn
 res://Scenes/GameUI.tscn
 res://Scenes/OtherObjects/PlayerLaptop.tscn
 res://Scenes/MovementNode.tscn
-res://Scenes/Animatronics/Animatronic_MrKinney.tscn
 res://Scenes/Animatronics/Animatronic_TA_Sanic.tscn
-res://Scripts/AnimatronicAI/BaseAnimatronicAI.gd
-res://Scripts/AnimatronicAI/EyeSight.gd

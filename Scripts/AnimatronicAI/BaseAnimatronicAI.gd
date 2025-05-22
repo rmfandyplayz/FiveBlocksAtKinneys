@@ -1,10 +1,12 @@
 extends Node3D
 class_name BaseAnimatronicAI
 
+## The base class that all forms of AI should inherit from. Contains crucial
+## info for all subsequent animatronic scripts.
+
 @export var temp_spawnLocation : MovementNode ## REMOVE LATER
 
 @export var aggressionLevel : float ## acts as a multiplier to things like [code]actionOpportunity[/code] and [code]timeBetweenActionOpportunities[/code]
-@export var viewDistanceHitbox : Area3D ## the area3d that acts as the "hitbox" for the AI
 
 @export_group("Movement Nodes")
 var possibleMoveNodes : Array[MovementNode] ## a list of possible nodes that the animatronic may decide to move to
@@ -15,9 +17,6 @@ var currentMoveNode : MovementNode ## the current movement node the animatronic 
 @export var timeBetweenActionOpportunities : float ## some amount of seconds between each [code]actionOpportunity[/code]
 @export var actionMoveChance : float ## chance for animatronic to [b]MOVE[/b] per [code]actionOpportunity[/code]. [br]if this % chance doesn't hit, the bot will [b]rotate[/b] instead.
 @export var actionOpportunityTimer : Timer
-
-@export var screen : Node3D
-var EyesightModule = preload("res://Scripts/AnimatronicAI/EyeSight.gd").new()
 
 func SetCurrentMoveNode(node : MovementNode) -> void:
 	currentMoveNode = node
@@ -34,10 +33,6 @@ func SpawnAnimatronic(spawnNode : MovementNode) -> void:
 ## does what the name says. sets the pos of this animatronic to the pos of the movement node
 func SetAnimatronicPosition(movementNode : MovementNode) -> void:
 	position = movementNode.position
-	EyesightModule.screen = screen
-	var sawScreen : bool = EyesightModule.CanSeeScreen(self)
-	
-	print(sawScreen)
 	
 
 func GetPossibleMoveNodes() -> Array[MovementNode]:
