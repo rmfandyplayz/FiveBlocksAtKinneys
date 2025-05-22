@@ -2,9 +2,9 @@ res://Scenes/Levels/Block1.tscn
 res://Scripts/GameManager.gd
 res://Scenes/OtherCharacters/Player.tscn
 res://Scenes/GameUI.tscn
-res://Scenes/OtherObjects/MrKinneyRoom.scn
-res://Scenes/Animatronics/Animatronic_MrKinney.tscn
-res://Scenes/Animatronics/Animatronic_TA_Sanic.tscn
 res://Scenes/OtherObjects/PlayerLaptop.tscn
 res://Scenes/MovementNode.tscn
-res://Uncategorized-Misc/TestScript.gd
+res://Scenes/Animatronics/Animatronic_MrKinney.tscn
+res://Scenes/Animatronics/Animatronic_TA_Sanic.tscn
+res://Scripts/AnimatronicAI/BaseAnimatronicAI.gd
+res://Scripts/AnimatronicAI/EyeSight.gd

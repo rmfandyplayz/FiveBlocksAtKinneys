@@ -33,6 +33,7 @@ offset_bottom = 610.0
 metadata/_edit_lock_ = true
 
 [node name="SwitchScreen" type="Button" parent="SubViewport/OnScreenGUI"]
+layout_mode = 0
 offset_left = 16.0
 offset_top = 529.0
 offset_right = 299.0

@@ -276,15 +276,17 @@ cameraTurnSeconds = 0.5
 lookDownCamAngle = Vector3(-28, 0, 0)
 lookDownCameraFOV = 35.0
 
-[node name="Animatronic_MrKinney" parent="Animatronics_Characters" instance=ExtResource("6_vs3us")]
+[node name="Animatronic_MrKinney" parent="Animatronics_Characters" node_paths=PackedStringArray("screen") instance=ExtResource("6_vs3us")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.46761, 0.535001, -13.9643)
+screen = NodePath("../../PlayerLaptop")
 
-[node name="Animatronic_TA_Sanic" parent="Animatronics_Characters" node_paths=PackedStringArray("temp_spawnLocation") instance=ExtResource("7_jhvsa")]
+[node name="Animatronic_TA_Sanic" parent="Animatronics_Characters" node_paths=PackedStringArray("temp_spawnLocation", "screen") instance=ExtResource("7_jhvsa")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.2351, -7.15256e-07, -13.3199)
 temp_spawnLocation = NodePath("../../MovementNodes/MoveNodeRow4Col5")
 actionOpportunity = 99.0
 timeBetweenActionOpportunities = 0.2
 actionMoveChance = 75.0
+screen = NodePath("../../PlayerLaptop")
 
 [node name="NPCs" type="Node" parent="Animatronics_Characters"]
 
