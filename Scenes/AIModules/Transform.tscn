@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://c4fc04va50ppc"]
+
+[ext_resource type="Script" uid="uid://dv02ismf5fnwm" path="res://Scripts/AnimatronicAI/AIModules/Transform.gd" id="1_y5ddp"]
+
+[node name="Transform" type="Node"]
+script = ExtResource("1_y5ddp")

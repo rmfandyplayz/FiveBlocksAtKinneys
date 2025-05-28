@@ -20,10 +20,13 @@ func GetAvailableMoveNodes() -> Array[MovementNode]:
 	
 
 
-func GetFairSpawn() -> bool: return fairSpawn
+func GetFairSpawn() -> bool: 
+	return fairSpawn
 
 # set isOccupied
-func SetOccupationStatus(newStatus : bool) -> void: isOccupied = newStatus
+func SetOccupationStatus(newStatus : bool) -> void: 
+	isOccupied = newStatus
 
 ## returns true if is occupied. false if otherwise
-func GetOccupationStatus() -> bool: return isOccupied
+func GetOccupationStatus() -> bool: 
+	return isOccupied

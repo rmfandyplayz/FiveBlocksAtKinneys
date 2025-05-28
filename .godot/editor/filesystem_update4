@@ -13,3 +13,6 @@ res://Scripts/Player.gd
 res://Scripts/AnimatronicAI/AIModules/Transform.gd
 res://Scripts/AnimatronicAI/BaseTAAI.gd
 res://Scripts/MovementNode.gd
+res://Scripts/GameUI/GameUI.gd
+res://Scenes/AIModules/EyeSight.tscn
+res://Scenes/AIModules/Transform.tscn

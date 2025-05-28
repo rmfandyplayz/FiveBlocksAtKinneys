@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://2b207jckmh2h"]
+
+[ext_resource type="Script" uid="uid://byf5h1w6gccv1" path="res://Scripts/AnimatronicAI/AIModules/EyeSight.gd" id="1_kb3wv"]
+
+[node name="EyeSight" type="Node"]
+script = ExtResource("1_kb3wv")

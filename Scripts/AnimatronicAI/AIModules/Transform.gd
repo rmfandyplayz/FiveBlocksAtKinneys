@@ -1,23 +1,28 @@
-extends BaseAnimatronicAI
+extends Node
 class_name Module_Transform
 
-## Script (module) that allows the animatronic to perform random transformations
+## Script (module) that allows the animatronic to perform transformations of ANY form
 
 var listOfAllMovementNodes : Array[Node]
 
+@export_group("Movement Nodes")
+var possibleMoveNodes : Array[MovementNode] ## a list of possible nodes that the animatronic may decide to move to
+var currentMoveNode : MovementNode ## the current movement node the animatronic is sitting on
+
+@export_group("Actions & Stuff")
 ## chance for animatronic to [b]MOVE[/b] per [code]actionOpportunity[/code].[br]
 ##if this % chance doesn't hit, the animatronic will [b]rotate[/b] instead.
 @export var actionMoveChance : float 
 @export var actionOpportunityTimer : Timer
 
 ## returns a rotation of either +90 or -90 degrees
-func RotateRandomly() -> float:
+func RotateRandomly(currentRotation : int) -> float:
 	var rotationRandom : int = randi_range(1, 2)
 
 	if(rotationRandom == 1):
-		return(rotation_degrees.y + 90)
+		return(currentRotation + 90)
 	else:
-		return(rotation_degrees.y - 90)
+		return(currentRotation - 90)
 
 
 ## returns a random movement node that the animatronic can move to[br]
@@ -51,3 +56,10 @@ func MoveRandomly() -> MovementNode:
 	# it should NOT return null. the code should always return something.
 	push_error(get_path(), " returned null when it should've returned a MovementNode for whatever tf reason.")
 	return null
+
+
+func GetCurrentMoveNode() -> MovementNode:
+	return currentMoveNode
+
+func GetPossibleMoveNodes() -> Array[MovementNode]:
+	return currentMoveNode.GetAvailableMoveNodes()
