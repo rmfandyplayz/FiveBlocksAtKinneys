@@ -1,13 +1,14 @@
 extends Marker3D
 class_name MovementNode
 
+@export var coordinates : Vector2i ## stores the coordinates for the movement node. [code](0, 0)[/code] is mr. kinney's seat. [br][code]x[/code] is row, [code]y[/code] is column 
 @export var availableMovementNodes : Array[MovementNode] ## Nodes that an animatronic can potentially move to from this position.
 @export var isOccupied : bool ## Is this node occupied by an animatronic?
 @export var fairSpawn : bool ## Should this node be available for the animatronics to randomly spawn on at the start of each game?
 
 
 
-## Returns a list of movement nodes that the animatronic may decide to move to.
+## Returns a list of movement nodes an animatronic may move to.
 func GetAvailableMoveNodes() -> Array[MovementNode]:
 	var outputArray : Array[MovementNode]
 	

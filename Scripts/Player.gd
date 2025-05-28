@@ -1,4 +1,5 @@
 extends Node3D
+class_name Player
 
 signal turningCamera(turnDuration : float, turnDirection : int)
 signal switchCameraMode # switch between looking at computer/looking up

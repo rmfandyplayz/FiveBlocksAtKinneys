@@ -1,4 +1,5 @@
 extends BaseAnimatronicAI
+class_name Module_EyeSight
 
 ## Script (module) that allows animatronics to see the player's laptop screen
 
