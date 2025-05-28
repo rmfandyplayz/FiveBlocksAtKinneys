@@ -1,12 +1,14 @@
 [gd_scene load_steps=5 format=3 uid="uid://bvmhgpwbrn5d6"]
 
-[ext_resource type="Script" uid="uid://naka4muiw4eg" path="res://Scripts/AnimatronicAI/BaseTAAI.gd" id="1_tbqwq"]
+[ext_resource type="Script" uid="uid://bih0bmu6s4bt2" path="res://Scripts/AnimatronicAI/SanicAI.gd" id="1_ha5l3"]
 [ext_resource type="PackedScene" uid="uid://dwutjfvdnbxqj" path="res://Assets/3DModels/Characters/Sanic.glb" id="2_hqloa"]
 [ext_resource type="PackedScene" uid="uid://2b207jckmh2h" path="res://Scenes/AIModules/EyeSight.tscn" id="3_ha5l3"]
 [ext_resource type="PackedScene" uid="uid://c4fc04va50ppc" path="res://Scenes/AIModules/Transform.tscn" id="4_tg1i8"]
 
-[node name="Animatronic_TA_Sanic" type="Node3D"]
-script = ExtResource("1_tbqwq")
+[node name="Animatronic_TA_Sanic" type="Node3D" node_paths=PackedStringArray("eyesightModule", "transformModule")]
+script = ExtResource("1_ha5l3")
+eyesightModule = NodePath("AIModules/EyeSight")
+transformModule = NodePath("AIModules/Transform")
 actionOpportunity = 30.0
 timeBetweenActionOpportunities = 2.0
 
@@ -16,9 +18,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.759435, 0)
 [node name="AIModules" type="Node" parent="."]
 
 [node name="EyeSight" parent="AIModules" instance=ExtResource("3_ha5l3")]
-aggressionLevel = null
-actionOpportunity = null
-timeBetweenActionOpportunities = null
+maxEyesightDistance = 6.0
 
 [node name="Transform" parent="AIModules" instance=ExtResource("4_tg1i8")]
 

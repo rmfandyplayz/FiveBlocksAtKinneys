@@ -16,3 +16,6 @@ res://Scripts/MovementNode.gd
 res://Scripts/GameUI/GameUI.gd
 res://Scenes/AIModules/EyeSight.tscn
 res://Scenes/AIModules/Transform.tscn
+res://Scripts/AnimatronicAI/SanicAI.gd
+res://Scripts/AnimatronicAI/MrKinneyAI.gd
+res://Scripts/GameObjects/PlayerLaptop.gd

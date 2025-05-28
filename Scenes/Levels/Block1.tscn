@@ -312,7 +312,7 @@ lookDownCameraFOV = 35.0
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.46761, 0.535001, -13.9643)
 
 [node name="Animatronic_TA_Sanic" parent="Animatronics_Characters" node_paths=PackedStringArray("temp_spawnLocation") instance=ExtResource("7_jhvsa")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.2351, -7.15256e-07, -13.3199)
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.0263788, 0.317852, -13.7263)
 temp_spawnLocation = NodePath("../../MovementNodes/MoveNodeRow4Col5")
 actionOpportunity = 99.0
 timeBetweenActionOpportunities = 0.2
@@ -320,6 +320,7 @@ timeBetweenActionOpportunities = 0.2
 [node name="NPCs" type="Node" parent="Animatronics_Characters"]
 
 [node name="PlayerLaptop" parent="." instance=ExtResource("8_8tk44")]
+unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.12747, 1.94032, 5.96474)
 
 [connection signal="turnCamera" from="GameUI" to="Animatronics_Characters/Player" method="_on_game_ui_turn_camera"]

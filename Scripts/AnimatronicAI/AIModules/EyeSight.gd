@@ -1,4 +1,4 @@
-extends BaseAnimatronicAI
+extends Node
 class_name Module_EyeSight
 
 ## Script (module) that allows animatronics to see the player's laptop screen
@@ -6,7 +6,7 @@ class_name Module_EyeSight
 # NOTE: It is assumed that -Z is forward
 
 #const screenAngle : float = deg_to_rad(5) -- deprecated
-const maxEyesightDistance : float = 3600
+@export var maxEyesightDistance : float
 var screen : Node3D ## the player's screen
 
 func _withinMaxDistance(difference : Vector3) -> bool:
@@ -14,7 +14,7 @@ func _withinMaxDistance(difference : Vector3) -> bool:
 
 ## If the position of the screen is not behind the enemy's back
 func _screenIsInFrontOfEnemy(look : Vector3, diff : Vector3) -> bool :
-	return look.dot(diff) > 0 # Could be the other way I suck at math idk
+	return look.dot(diff) < 0 # Could be the other way I suck at math idk
 
 
 func _acceptablyFacingTowardScreen(look : Vector3) -> bool :
@@ -23,6 +23,7 @@ func _acceptablyFacingTowardScreen(look : Vector3) -> bool :
 	return screenFront.dot(look) < 0 
 
 func CanSeeScreen(animatronic : Node3D) -> bool:
+	print(screen)
 	if screen == null:
 		return false # can't see something that's not there
 	var differenceVector : Vector3 = screen.position - animatronic.position
@@ -36,5 +37,5 @@ func CanSeeScreen(animatronic : Node3D) -> bool:
 	return result
 
 
-func SetScreenObject() -> void:
-	pass
+func SetScreenObject(newScreenObj : Node3D) -> void:
+	screen = newScreenObj
