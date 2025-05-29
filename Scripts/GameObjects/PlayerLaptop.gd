@@ -8,29 +8,29 @@ class_name PlayerLaptop
 @export var nonSusScreens : Array[CompressedTexture2D] = []
 @onready var laptopScreen : TextureRect = $SubViewport/OnScreenGUI/Display
 
-var CurrentlySus : bool = false
+var currentlySus : bool = false
 
-func getRandElement(arr: Array) -> CompressedTexture2D:
+func GetRandElement(arr: Array) -> CompressedTexture2D:
 	if arr.is_empty():
 		return null
 	return arr[randi() % arr.size()]
 
-func  isLaptopSus() -> bool :
-	return CurrentlySus 
+func IsLaptopSus() -> bool:
+	return currentlySus 
 	# this function is basically uselss
 	# my subconcious say this is roblox and public does not exist
-	# so here it is (realistically, just read `CurrentlySus`)
+	# so here it is (realistically, just read `currentlySus`)
 
-func onSwitchScreenPressed() -> void:
+func _onSwitchScreenPressed() -> void:
 	#print("pressed")
-	CurrentlySus = not CurrentlySus
+	currentlySus = not currentlySus
 	var laptopImage : CompressedTexture2D = null
-	if CurrentlySus :
-		laptopImage = getRandElement(susScreens)
+	if currentlySus :
+		laptopImage = GetRandElement(susScreens)
 	else :
-		laptopImage = getRandElement(nonSusScreens)
+		laptopImage = GetRandElement(nonSusScreens)
 	laptopScreen.texture = laptopImage
 
-func  _process(delta: float) -> void:
+func _process(delta: float) -> void:
 	if Input.is_action_just_pressed("SwitchScreen") :
-		onSwitchScreenPressed()
+		_onSwitchScreenPressed()
