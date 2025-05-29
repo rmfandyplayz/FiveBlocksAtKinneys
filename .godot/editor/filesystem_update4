@@ -1,0 +1,5 @@
+res://Scenes/Levels/Block1.tscn
+res://Scripts/GameManager.gd
+res://Scenes/Animatronics/Animatronic_TA_Sanic.tscn
+res://Scenes/OtherObjects/PlayerLaptop.tscn
+res://Scripts/GameObjects/PlayerLaptop.gd
