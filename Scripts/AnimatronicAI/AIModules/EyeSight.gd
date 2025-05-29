@@ -23,7 +23,7 @@ func _acceptablyFacingTowardScreen(look : Vector3) -> bool :
 	return screenFront.dot(look) < 0 
 
 func CanSeeScreen(animatronic : Node3D) -> bool:
-	print(screen)
+	#print(screen)
 	if screen == null:
 		return false # can't see something that's not there
 	var differenceVector : Vector3 = screen.position - animatronic.position
