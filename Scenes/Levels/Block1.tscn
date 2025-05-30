@@ -2,8 +2,8 @@
 
 [ext_resource type="Script" uid="uid://1yjg3pvtpiv0" path="res://Scripts/GameManager.gd" id="1_qr2md"]
 [ext_resource type="PackedScene" uid="uid://dlrm167o3l2ei" path="res://Scenes/OtherObjects/MrKinneyRoom.scn" id="2_woanh"]
-[ext_resource type="PackedScene" uid="uid://djxeg6wnj2vlh" path="res://Scenes/MovementNode.tscn" id="3_8etg7"]
-[ext_resource type="PackedScene" uid="uid://dh02cx54ftw60" path="res://Scenes/GameUI.tscn" id="4_cfn0e"]
+[ext_resource type="PackedScene" uid="uid://djxeg6wnj2vlh" path="res://Scenes/Utility/MovementNode.tscn" id="3_8etg7"]
+[ext_resource type="PackedScene" uid="uid://dh02cx54ftw60" path="res://Scenes/UI/GameUI.tscn" id="4_cfn0e"]
 [ext_resource type="PackedScene" uid="uid://b5usdea6wy0dw" path="res://Scenes/OtherCharacters/Player.tscn" id="5_px0kl"]
 [ext_resource type="PackedScene" uid="uid://bsjudsgbbd1nr" path="res://Scenes/Animatronics/Animatronic_MrKinney.tscn" id="6_vs3us"]
 [ext_resource type="PackedScene" uid="uid://bvmhgpwbrn5d6" path="res://Scenes/Animatronics/Animatronic_TA_Sanic.tscn" id="7_jhvsa"]
@@ -12,9 +12,10 @@
 [sub_resource type="Environment" id="Environment_i5opr"]
 ambient_light_source = 3
 
-[node name="Game" type="Node3D"]
+[node name="Game" type="Node3D" node_paths=PackedStringArray("availableAnimatronics")]
 editor_description = "the root node for the scenes where the main gameplay is supposed to happen"
 script = ExtResource("1_qr2md")
+availableAnimatronics = [NodePath("Animatronics_Characters/Animatronic_TA_Sanic"), NodePath("Animatronics_Characters/Animatronic_TA_Sanic2"), NodePath("Animatronics_Characters/Animatronic_TA_Sanic3"), NodePath("Animatronics_Characters/Animatronic_TA_Sanic4")]
 metadata/_edit_lock_ = true
 
 [node name="MrKinneyRoom" parent="." instance=ExtResource("2_woanh")]
@@ -26,56 +27,67 @@ metadata/_edit_lock_ = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.674, 0.55, -9.53243)
 coordinates = Vector2i(1, 1)
 availableMovementNodes = [NodePath("../MoveNodeRow2Col2"), NodePath("../MoveNodeRow1Col2")]
+fairSpawn = true
 
 [node name="MoveNodeRow1Col2" parent="MovementNodes" node_paths=PackedStringArray("availableMovementNodes") instance=ExtResource("3_8etg7")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.39818, 0.55, -9.53243)
 coordinates = Vector2i(1, 2)
 availableMovementNodes = [NodePath("../MoveNodeRow1Col1"), NodePath("../MoveNodeRow1Col3")]
+fairSpawn = true
 
 [node name="MoveNodeRow1Col3" parent="MovementNodes" node_paths=PackedStringArray("availableMovementNodes") instance=ExtResource("3_8etg7")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.695, 0.55, -9.53243)
 coordinates = Vector2i(1, 3)
 availableMovementNodes = [NodePath("../MoveNodeRow2Col5"), NodePath("../MoveNodeRow1Col2")]
+fairSpawn = true
 
 [node name="MoveNodeRow2Col1" parent="MovementNodes" node_paths=PackedStringArray("availableMovementNodes") instance=ExtResource("3_8etg7")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.1444, 0.560339, -6.04633)
 coordinates = Vector2i(2, 1)
 availableMovementNodes = [NodePath("../MoveNodeRow2Col2"), NodePath("../MoveNodeRow3Col1")]
+fairSpawn = true
 
 [node name="MoveNodeRow2Col2" parent="MovementNodes" node_paths=PackedStringArray("availableMovementNodes") instance=ExtResource("3_8etg7")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.674, 0.55, -6.0461)
 coordinates = Vector2i(2, 2)
 availableMovementNodes = [NodePath("../MoveNodeRow1Col1"), NodePath("../MoveNodeRow2Col1"), NodePath("../MoveNodeRow2Col3"), NodePath("../MoveNodeRow3Col2")]
+fairSpawn = true
 
 [node name="MoveNodeRow2Col3" parent="MovementNodes" node_paths=PackedStringArray("availableMovementNodes") instance=ExtResource("3_8etg7")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.156776, 0.55, -6.0461)
 coordinates = Vector2i(2, 3)
 availableMovementNodes = [NodePath("../MoveNodeRow2Col4"), NodePath("../MoveNodeRow2Col2"), NodePath("../MoveNodeRow3Col3")]
+fairSpawn = true
 
 [node name="MoveNodeRow2Col4" parent="MovementNodes" node_paths=PackedStringArray("availableMovementNodes") instance=ExtResource("3_8etg7")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.11777, 0.55, -6.0461)
 coordinates = Vector2i(2, 4)
 availableMovementNodes = [NodePath("../MoveNodeRow2Col3"), NodePath("../MoveNodeRow3Col4"), NodePath("../MoveNodeRow2Col5")]
+fairSpawn = true
 
 [node name="MoveNodeRow2Col5" parent="MovementNodes" node_paths=PackedStringArray("availableMovementNodes") instance=ExtResource("3_8etg7")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.695, 0.55, -6.046)
 coordinates = Vector2i(2, 5)
 availableMovementNodes = [NodePath("../MoveNodeRow3Col5"), NodePath("../MoveNodeRow2Col4"), NodePath("../MoveNodeRow1Col3")]
+fairSpawn = true
 
 [node name="MoveNodeRow3Col1" parent="MovementNodes" node_paths=PackedStringArray("availableMovementNodes") instance=ExtResource("3_8etg7")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.1444, 0.560339, -2.4011)
 coordinates = Vector2i(3, 1)
 availableMovementNodes = [NodePath("../MoveNodeRow2Col1"), NodePath("../MoveNodeRow4Col1")]
+fairSpawn = true
 
 [node name="MoveNodeRow3Col2" parent="MovementNodes" node_paths=PackedStringArray("availableMovementNodes") instance=ExtResource("3_8etg7")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.674, 0.55, -2.40086)
 coordinates = Vector2i(3, 2)
 availableMovementNodes = [NodePath("../MoveNodeRow2Col2"), NodePath("../MoveNodeRow4Col2")]
+fairSpawn = true
 
 [node name="MoveNodeRow3Col3" parent="MovementNodes" node_paths=PackedStringArray("availableMovementNodes") instance=ExtResource("3_8etg7")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.156776, 0.55, -2.40086)
 coordinates = Vector2i(3, 3)
 availableMovementNodes = [NodePath("../MoveNodeRow2Col3"), NodePath("../MoveNodeRow4Col3")]
+fairSpawn = true
 
 [node name="MoveNodeRow3Col4" parent="MovementNodes" node_paths=PackedStringArray("availableMovementNodes") instance=ExtResource("3_8etg7")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.11777, 0.55, -2.40086)
@@ -91,11 +103,13 @@ availableMovementNodes = [NodePath("../MoveNodeRow2Col5"), NodePath("../MoveNode
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.1444, 0.560339, 0.793242)
 coordinates = Vector2i(4, 1)
 availableMovementNodes = [NodePath("../MoveNodeRow3Col1"), NodePath("../MoveNodeRow5Col1")]
+fairSpawn = true
 
 [node name="MoveNodeRow4Col2" parent="MovementNodes" node_paths=PackedStringArray("availableMovementNodes") instance=ExtResource("3_8etg7")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.674, 0.55, 0.793477)
 coordinates = Vector2i(4, 2)
 availableMovementNodes = [NodePath("../MoveNodeRow3Col2"), NodePath("../MoveNodeRow5Col2")]
+fairSpawn = true
 
 [node name="MoveNodeRow4Col3" parent="MovementNodes" node_paths=PackedStringArray("availableMovementNodes") instance=ExtResource("3_8etg7")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.156776, 0.55, 0.793477)
@@ -116,11 +130,13 @@ availableMovementNodes = [NodePath("../MoveNodeRow3Col5"), NodePath("../MoveNode
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.1444, 0.560339, 3.94521)
 coordinates = Vector2i(5, 1)
 availableMovementNodes = [NodePath("../MoveNodeRow4Col1"), NodePath("../MoveNodeRow6Col1")]
+fairSpawn = true
 
 [node name="MoveNodeRow5Col2" parent="MovementNodes" node_paths=PackedStringArray("availableMovementNodes") instance=ExtResource("3_8etg7")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.674, 0.55, 3.94545)
 coordinates = Vector2i(5, 2)
 availableMovementNodes = [NodePath("../MoveNodeRow4Col2"), NodePath("../MoveNodeRow6Col2")]
+fairSpawn = true
 
 [node name="MoveNodeRow5Col3" parent="MovementNodes" node_paths=PackedStringArray("availableMovementNodes") instance=ExtResource("3_8etg7")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.156776, 0.55, 3.94545)
@@ -141,11 +157,13 @@ availableMovementNodes = [NodePath("../MoveNodeRow4Col5"), NodePath("../MoveNode
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.1444, 0.560339, 7.83291)
 coordinates = Vector2i(6, 1)
 availableMovementNodes = [NodePath("../MoveNodeRow6Col2"), NodePath("../MoveNodeRow5Col1")]
+fairSpawn = true
 
 [node name="MoveNodeRow6Col2" parent="MovementNodes" node_paths=PackedStringArray("availableMovementNodes") instance=ExtResource("3_8etg7")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.674, 0.55, 7.83314)
 coordinates = Vector2i(6, 2)
 availableMovementNodes = [NodePath("../MoveNodeRow6Col1"), NodePath("../MoveNodeRow6Col3"), NodePath("../MoveNodeRow5Col2")]
+fairSpawn = true
 
 [node name="MoveNodeRow6Col3" parent="MovementNodes" node_paths=PackedStringArray("availableMovementNodes") instance=ExtResource("3_8etg7")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.156776, 0.55, 7.83314)
@@ -308,14 +326,29 @@ cameraTurnSeconds = 0.5
 lookDownCamAngle = Vector3(-28, 0, 0)
 lookDownCameraFOV = 35.0
 
-[node name="Animatronic_MrKinney" parent="Animatronics_Characters" instance=ExtResource("6_vs3us")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.46761, 0.535001, -13.9643)
-
-[node name="Animatronic_TA_Sanic" parent="Animatronics_Characters" node_paths=PackedStringArray("temp_spawnLocation") instance=ExtResource("7_jhvsa")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.0263788, 0.317852, -13.7263)
-temp_spawnLocation = NodePath("../../MovementNodes/MoveNodeRow4Col5")
+[node name="Animatronic_TA_Sanic" parent="Animatronics_Characters" instance=ExtResource("7_jhvsa")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0263788, 0.317852, -13.7263)
 actionOpportunity = 99.0
 timeBetweenActionOpportunities = 0.2
+
+[node name="Animatronic_TA_Sanic2" parent="Animatronics_Characters" instance=ExtResource("7_jhvsa")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.63439, 0.317852, -13.7263)
+actionOpportunity = 99.0
+timeBetweenActionOpportunities = 0.2
+
+[node name="Animatronic_TA_Sanic3" parent="Animatronics_Characters" instance=ExtResource("7_jhvsa")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.63439, 0.317852, -13.7263)
+actionOpportunity = 99.0
+timeBetweenActionOpportunities = 0.2
+
+[node name="Animatronic_TA_Sanic4" parent="Animatronics_Characters" instance=ExtResource("7_jhvsa")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.63439, 0.317852, -13.7263)
+actionOpportunity = 99.0
+timeBetweenActionOpportunities = 0.2
+
+[node name="Animatronic_MrKinney" parent="Animatronics_Characters" instance=ExtResource("6_vs3us")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.46761, 0.535001, -13.9643)
+visible = false
 
 [node name="NPCs" type="Node" parent="Animatronics_Characters"]
 

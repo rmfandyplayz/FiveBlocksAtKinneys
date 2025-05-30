@@ -42,16 +42,6 @@ offset_right = 963.0
 offset_bottom = 610.0
 metadata/_edit_lock_ = true
 
-[node name="SwitchScreen" type="Button" parent="SubViewport/OnScreenGUI"]
-top_level = true
-z_index = 4096
-layout_mode = 0
-offset_left = 16.0
-offset_top = 529.0
-offset_right = 299.0
-offset_bottom = 593.0
-text = "switch screen"
-
 [node name="Display" type="TextureRect" parent="SubViewport/OnScreenGUI"]
 z_index = -100
 layout_mode = 1
@@ -63,10 +53,9 @@ grow_vertical = 2
 texture = ExtResource("5_r8g32")
 
 [node name="Reference" type="ReferenceRect" parent="."]
+visible = false
 offset_right = 963.0
 offset_bottom = 610.0
 border_color = Color(0.801159, 0.00467369, 1, 1)
 border_width = 3.0
 metadata/_edit_lock_ = true
-
-[connection signal="mouse_entered" from="SubViewport/OnScreenGUI/SwitchScreen" to="." method="_on_switch_screen_mouse_entered"]

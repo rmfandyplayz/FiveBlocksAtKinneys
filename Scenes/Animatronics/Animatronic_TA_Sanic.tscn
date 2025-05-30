@@ -5,12 +5,13 @@
 [ext_resource type="PackedScene" uid="uid://2b207jckmh2h" path="res://Scenes/AIModules/EyeSight.tscn" id="3_ha5l3"]
 [ext_resource type="PackedScene" uid="uid://c4fc04va50ppc" path="res://Scenes/AIModules/Transform.tscn" id="4_tg1i8"]
 
-[node name="Animatronic_TA_Sanic" type="Node3D" node_paths=PackedStringArray("eyesightModule", "transformModule")]
+[node name="Animatronic_TA_Sanic" type="Node3D" node_paths=PackedStringArray("eyesightModule", "transformModule", "actionOpportunityTimer")]
 script = ExtResource("1_ha5l3")
 eyesightModule = NodePath("AIModules/EyeSight")
 transformModule = NodePath("AIModules/Transform")
 actionOpportunity = 30.0
 timeBetweenActionOpportunities = 2.0
+actionOpportunityTimer = NodePath("ActionOpportunityTimer")
 
 [node name="Model" parent="." instance=ExtResource("2_hqloa")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.759435, 0)
@@ -21,6 +22,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.759435, 0)
 maxEyesightDistance = 6.0
 
 [node name="Transform" parent="AIModules" instance=ExtResource("4_tg1i8")]
+actionMoveChance = 75.0
 
 [node name="ActionOpportunityTimer" type="Timer" parent="."]
 one_shot = true

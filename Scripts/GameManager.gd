@@ -5,12 +5,14 @@ extends Node
 
 static var movementNodeParent : Node # the node that holds all MovevementNodes
 
-@export var availableAnimatronics : BaseAnimatronicAI ## a list of animatronics that will be spawned this game
+@export var availableAnimatronics : Array[BaseAnimatronicAI] ## a list of animatronics that will be spawned this game
 
 
 func _ready() -> void:
 	movementNodeParent = get_node("/root/Game/MovementNodes")
-
+	
+	for animatronic : BaseAnimatronicAI in availableAnimatronics:
+		animatronic.SpawnAnimatronic()
 
 
 

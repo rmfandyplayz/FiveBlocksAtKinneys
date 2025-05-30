@@ -1,7 +1,8 @@
+RichTextLabel
+Control
 TextureRect
 Node
 Node2D
-Control
 ReferenceRect
 Sprite3D
 Button
@@ -12,4 +13,3 @@ Timer
 OmniLight3D
 CollisionShape3D
 Area3D
-Marker3D
