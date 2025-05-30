@@ -1,9 +1,6 @@
-res://Scripts/AnimatronicAI/BaseAnimatronicAI.gd
 res://Scenes/Levels/Block1.tscn
 res://Scripts/GameManager.gd
 res://Scenes/Animatronics/Animatronic_TA_Sanic.tscn
 res://Scenes/OtherObjects/PlayerLaptop.tscn
-res://Scripts/GameObjects/PlayerLaptop.gd
-res://Scripts/AnimatronicAI/SanicAI.gd
-res://Scripts/AnimatronicAI/AIModules/Transform.gd
 res://Scenes/TestScene.tscn
+res://Scenes/OtherObjects/MrKinneyRoom.scn

@@ -328,23 +328,19 @@ lookDownCameraFOV = 35.0
 
 [node name="Animatronic_TA_Sanic" parent="Animatronics_Characters" instance=ExtResource("7_jhvsa")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0263788, 0.317852, -13.7263)
-actionOpportunity = 99.0
-timeBetweenActionOpportunities = 0.2
+actionOpportunity = 45.0
 
 [node name="Animatronic_TA_Sanic2" parent="Animatronics_Characters" instance=ExtResource("7_jhvsa")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.63439, 0.317852, -13.7263)
-actionOpportunity = 99.0
-timeBetweenActionOpportunities = 0.2
+actionOpportunity = 45.0
 
 [node name="Animatronic_TA_Sanic3" parent="Animatronics_Characters" instance=ExtResource("7_jhvsa")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.63439, 0.317852, -13.7263)
-actionOpportunity = 99.0
-timeBetweenActionOpportunities = 0.2
+actionOpportunity = 45.0
 
 [node name="Animatronic_TA_Sanic4" parent="Animatronics_Characters" instance=ExtResource("7_jhvsa")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.63439, 0.317852, -13.7263)
-actionOpportunity = 99.0
-timeBetweenActionOpportunities = 0.2
+actionOpportunity = 45.0
 
 [node name="Animatronic_MrKinney" parent="Animatronics_Characters" instance=ExtResource("6_vs3us")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.46761, 0.535001, -13.9643)

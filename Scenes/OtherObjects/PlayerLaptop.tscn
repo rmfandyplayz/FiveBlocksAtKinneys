@@ -6,9 +6,11 @@
 [ext_resource type="Texture2D" uid="uid://t2po845dcbgu" path="res://Assets/3DModels/Characters/MrKinneyFinalBoss_00793.jpg" id="3_r8g32"]
 [ext_resource type="Texture2D" uid="uid://d0wfer33s1vcb" path="res://Assets/3DModels/Characters/GigaNerd_hqdefault.jpg" id="3_uc4na"]
 [ext_resource type="Texture2D" uid="uid://dk0jkkluuti8o" path="res://Assets/3DModels/Characters/Terraria_images.png" id="4_e3hlt"]
-[ext_resource type="Texture2D" uid="uid://fyoiibmd37qb" path="res://Assets/3DModels/Sanic_00793.jpg" id="5_r8g32"]
+[ext_resource type="Texture2D" uid="uid://fyoiibmd37qb" path="res://Assets/Textures/Sanic_00793.jpg" id="5_r8g32"]
 [ext_resource type="Texture2D" uid="uid://5eutx2ln4jdc" path="res://Assets/3DModels/Characters/MrKinneyFinalBoss_Black-Suit---1_9f608683-2129-4321-8cd2-47efa69981b3_1.webp" id="6_j87xj"]
-[ext_resource type="Texture2D" uid="uid://dnm87mhl2d81n" path="res://Assets/3DModels/MrKinneyTortureChamber_7NeiaYupX5i0VmTAh-yLanbYJ9cJt7s8YKnpTEREeioJMp4lT4dT81ndkT5IEcQ.webp" id="7_qmsy0"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_5mfe2"]
+load_path = "res://.godot/imported/MrKinneyTortureChamber_7NeiaYupX5i0VmTAh-yLanbYJ9cJt7s8YKnpTEREeioJMp4lT4dT81ndkT5IEcQ.webp-0f413c1538a62a58990455c942fbca63.s3tc.ctex"
 
 [sub_resource type="ViewportTexture" id="ViewportTexture_clnsn"]
 viewport_path = NodePath("SubViewport")
@@ -17,7 +19,7 @@ viewport_path = NodePath("SubViewport")
 editor_description = "the player's laptop which will display crap"
 script = ExtResource("1_clnsn")
 susScreens = Array[CompressedTexture2D]([ExtResource("2_wve06"), ExtResource("3_uc4na"), ExtResource("4_e3hlt")])
-nonSusScreens = Array[CompressedTexture2D]([ExtResource("3_r8g32"), ExtResource("6_j87xj"), ExtResource("7_qmsy0")])
+nonSusScreens = Array[CompressedTexture2D]([ExtResource("3_r8g32"), ExtResource("6_j87xj"), SubResource("CompressedTexture2D_5mfe2")])
 metadata/_edit_lock_ = true
 
 [node name="Model" parent="." instance=ExtResource("1_yib26")]
